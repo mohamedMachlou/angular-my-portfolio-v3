@@ -12,8 +12,6 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-
-
 @NgModule({
   declarations: [
     NavBarComponent,
@@ -26,10 +24,21 @@ import { FooterComponent } from './components/footer/footer.component';
     PortfolioComponent,
     BlogComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [
+    NavBarComponent,
+    AboutComponent,
+    WelcomeComponent,
+    MyServicesComponent,
+    PricePlansComponent,
+    RecommendationsComponent,
+    EducationComponent,
+    PortfolioComponent,
+    BlogComponent,
+    ContactComponent,
+    FooterComponent,
+  ],
 })
-export class PortfolioModuleModule { }
+export class PortfolioModuleModule {}

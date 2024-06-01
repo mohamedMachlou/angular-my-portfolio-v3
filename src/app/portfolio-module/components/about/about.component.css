@@ -1,0 +1,123 @@
+.infos .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+}
+.infos .image .img {
+  width: 330px;
+  height: 150px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infos .image .img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+}
+.infos .image .img:after {
+  content: "";
+  background-color: #4eff10;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 196px;
+}
+.infos .image h2 {
+  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.infos .image h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #959292;
+}
+.infos .image .social-media {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.infos .image .social-media .img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--main-color);
+}
+.infos .image .social-media .img img {
+  width: 20px;
+  height: 20px;
+}
+.infos .line {
+  width: 80%;
+  height: 1px;
+  background-color: #959292;
+  margin: 20px 0px;
+}
+.infos .perso {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 46px;
+  margin: 0px auto;
+}
+.infos .perso h3 {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+.infos .perso .available {
+  color: #3fd807;
+}
+.infos .image .title {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+.infos .image .title h2 {
+  font-weight: 300;
+  font-size: 22px;
+  text-align: start;
+}
+.infos .image .slide-bar {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.infos .image .slide-bar .indicators {
+  width: 96%;
+  height: 30px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infos .image .slide-bar .indicators h3 {
+  font-weight: 300;
+  font-size: 15px;
+}
+.infos .image .slide-bar .back {
+  width: 100%;
+  height: 8px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.infos .image .slide-bar .back .under {
+  height: 4px;
+  margin-left: 2px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}

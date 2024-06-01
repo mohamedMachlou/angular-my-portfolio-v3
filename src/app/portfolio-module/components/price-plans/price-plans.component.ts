@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-price-plans',
+  selector: 'price-plans',
   templateUrl: './price-plans.component.html',
-  styleUrl: './price-plans.component.css'
+  styleUrl: './price-plans.component.css',
 })
-export class PricePlansComponent {
-
-}
+export class PricePlansComponent {}

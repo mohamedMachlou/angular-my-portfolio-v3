@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Start Variables  */
+:root {
+  --main-color: #00d1ff;
+}
+/* End Variables  */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  caret-color: transparent;
+  background-color: #e5e5e5;
+}
+/* Start Media Queries */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .portfolio {
+    width: 576px;
+    background-color: rgb(0, 0, 255);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .portfolio {
+    width: 768px;
+    background-color: rgb(59, 157, 226);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .portfolio {
+    width: 992px;
+    background-color: rgb(114, 144, 165);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .portfolio {
+    width: 1200px;
+    background-color: rgb(124, 125, 126);
+  }
+}
+/* End Media Queries */
+/* End  Global Rules */
+.portfolio {
+  display: grid;
+  grid-template-columns: 28% 68%;
+  gap: 4%;
+  position: relative;
+  width: 95%;
+  margin-top: 0px;
+}
+.about {
+  background-color: rgb(255, 255, 255);
+  height: 1400px;
+  width: 330px;
+}
+.container {
+  background-color: red;
+  height: 1500px;
+}
+.menu {
+  background-color: greenyellow;
+  height: 400px;
+  width: 60px;
+  position: fixed;
+  top: 9px;
+  right: 0px;
+}

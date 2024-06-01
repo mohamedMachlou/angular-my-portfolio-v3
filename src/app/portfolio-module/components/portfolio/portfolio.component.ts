@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css'
+  styleUrl: './portfolio.component.css',
 })
-export class PortfolioComponent {
-
-}
+export class PortfolioComponent {}

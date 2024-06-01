@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-recommendations',
+  selector: 'recommendations',
   templateUrl: './recommendations.component.html',
-  styleUrl: './recommendations.component.css'
+  styleUrl: './recommendations.component.css',
 })
-export class RecommendationsComponent {
-
-}
+export class RecommendationsComponent {}
