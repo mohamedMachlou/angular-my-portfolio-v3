@@ -1,0 +1,40 @@
+/* Portfolio Version Created by Mohamed Machlou */
+.container .education {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.container .education .block {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+.container .education .head {
+  width: 40%;
+  padding: 20px 10px;
+  /* background-color: #ffff00; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .education .body {
+  width: 40%;
+  padding: 20px 10px;
+  /* background-color: rgb(232, 240, 246); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .education span {
+  background-color: var(--text-gray);
+  height: 1px;
+  width: 60%;
+  margin: 10px 0px;
+}
