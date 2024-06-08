@@ -1,8 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-
+/* Portfolio Version Created by Mohamed Machlou */
 /* Start Variables  */
 :root {
+  /* --main-color: #274696; */
   --main-color: #00d1ff;
+  --gray-color: #747373;
+  --text-gray: #969494;
+  --text-para-size: 16px;
+  --text-para-weight: 400;
 }
 /* End Variables  */
 /* Start Global Rules */
@@ -48,7 +52,7 @@ body {
 @media (min-width: 1200px) {
   .portfolio {
     width: 1200px;
-    background-color: rgb(124, 125, 126);
+    background-color: #e5e5e5;
   }
 }
 /* End Media Queries */
@@ -62,19 +66,57 @@ body {
   margin-top: 0px;
 }
 .about {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   height: 1400px;
   width: 330px;
 }
 .container {
-  background-color: red;
-  height: 1500px;
+  /* background-color: #000000; */
 }
-.menu {
-  background-color: greenyellow;
-  height: 400px;
+.nav {
+  background-color: #ffffff;
+  height: 650px;
   width: 60px;
   position: fixed;
   top: 9px;
   right: 0px;
 }
+/* Button Component */
+button {
+  width: 120px;
+  height: 38px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--main-color);
+}
+/* Start Section Heading Component */
+.container .section-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-heading .heading-block {
+  width: 45%;
+  padding: 20px;
+  margin: 30px 0px;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-heading .heading-block h2 {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.section-heading .heading-block p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--gray-color);
+}
+/* End Section Heading Component */

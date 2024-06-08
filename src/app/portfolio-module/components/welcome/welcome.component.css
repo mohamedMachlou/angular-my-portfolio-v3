@@ -1,0 +1,88 @@
+.container .welcome {
+  width: 100%;
+  /* background-color: rgba(0, 249, 199, 0.702); */
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container .welcome .body {
+  width: 60%;
+  padding: 35px;
+  background-color: #ffffff;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container .welcome .body h2 {
+  font-weight: 800;
+  font-size: 25px;
+}
+.container .welcome .body h2 span {
+  color: var(--main-color);
+}
+.container .welcome .body p {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(133, 133, 132);
+}
+.container .welcome .body button {
+  margin-top: 20px;
+}
+.container .welcome .img {
+  width: 40%;
+  padding: 35px;
+  background-color: #ffffff;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container .welcome .img img {
+  width: 300px;
+}
+.welcome .cercle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+}
+.welcome .square {
+  width: 15px;
+  height: 15px;
+  transform: rotate(30deg);
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.welcome .blue1 {
+  border: 2px solid var(--main-color);
+  top: 25px;
+  left: 40px;
+}
+.welcome .blue2 {
+  border: 2px solid var(--main-color);
+  top: 310px;
+  left: 400px;
+}
+.welcome .green1 {
+  border: 2px solid #46f636;
+  top: 40px;
+  left: 400px;
+}
+.welcome .green2 {
+  border: 2px solid #46f636;
+  top: 350px;
+  left: 40px;
+}
+.welcome .blue3 {
+  border: 2px solid var(--main-color);
+  top: 290px;
+  left: 240px;
+}
+.welcome .green3 {
+  border: 2px solid #46f636;
+  top: 140px;
+  left: 490px;
+}

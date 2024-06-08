@@ -1,0 +1,40 @@
+/* Portfolio Version Created by Mohamed Machlou */
+.container .my-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .my-services .block {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px;
+}
+.container .my-services .service {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+.container .my-services .service img {
+  width: 80px;
+  margin: 10px 5px 30px;
+  fill: #0d1be7;
+}
+.container .my-services .service h3 {
+  font-weight: 600;
+  font-size: 17px;
+  margin: 20px 0px 0px;
+}
+.container .my-services .service p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #868684;
+}
