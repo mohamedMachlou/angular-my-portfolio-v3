@@ -2,11 +2,13 @@
 /* Start Variables  */
 :root {
   /* --main-color: #274696; */
-  --main-color: #00d1ff;
+  --main-color: #2a4fa7;
+  /* --main-color: #00d1ff; */
   --gray-color: #747373;
   --text-gray: #969494;
   --text-para-size: 16px;
   --text-para-weight: 400;
+  --background-color: #e7e7e7;
 }
 /* End Variables  */
 /* Start Global Rules */
@@ -21,7 +23,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
-  background-color: #e5e5e5;
+  background-color: var(--background-color);
 }
 /* Start Media Queries */
 /* Small devices (landscape phones, 576px and up) */
@@ -52,7 +54,8 @@ body {
 @media (min-width: 1200px) {
   .portfolio {
     width: 1200px;
-    background-color: #e5e5e5;
+    background-color: var(--background-color);
+    /* background-color: #e5e5e5; */
   }
 }
 /* End Media Queries */
@@ -60,7 +63,7 @@ body {
 .portfolio {
   display: grid;
   grid-template-columns: 28% 68%;
-  gap: 4%;
+  gap: 3%;
   position: relative;
   width: 95%;
   margin-top: 0px;
@@ -69,6 +72,11 @@ body {
   background-color: #ffffff;
   height: 1400px;
   width: 330px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 8px;
 }
 .container {
   /* background-color: #000000; */
@@ -80,6 +88,9 @@ body {
   position: fixed;
   top: 9px;
   right: 0px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  border-radius: 8px;
 }
 /* Button Component */
 button {
@@ -90,6 +101,7 @@ button {
   font-weight: 500;
   font-size: 18px;
   background-color: var(--main-color);
+  color: #ffffff;
 }
 /* Start Section Heading Component */
 .container .section-heading {

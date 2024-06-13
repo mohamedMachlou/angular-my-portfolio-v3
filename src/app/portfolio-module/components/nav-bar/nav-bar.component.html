@@ -1,27 +1,126 @@
 <div class="nav">
-  <div class="contrast">
-    <a href="">
-      <img src="../../../../assets/images/Contrast-m-Icon.svg" alt="" />
+  <div class="contrast" id="home">
+    <a routerLink="['/home']" routerLinkActive="router-link-active">
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Contrast-m-Icon.svg"
+        alt=""
+      />
     </a>
   </div>
   <div class="menu">
-    <a href="">
-      <img src="../../../../assets/images/Home-m-Icon.svg" alt="" />
+    <a
+      (click)="goToHome()"
+      routerLink="['/home']"
+      routerLinkActive="router-link-active"
+      [ngClass]="[
+        this.isActive() == 'home' ? 'isActiveClass' : 'isDeactiveClass'
+      ]"
+    >
+      <img
+        src="../../../../assets/images/Menu Icons Active/home--menu--icon.svg"
+        alt=""
+        *ngIf="this.isActive() == 'home'"
+      />
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Home-m-Icon.svg"
+        alt=""
+        *ngIf="this.isActive() != 'home'"
+      />
     </a>
-    <a href="">
-      <img src="../../../../assets/images/Services-m-Icon.svg" alt="" />
+    <a
+      (click)="goToService()"
+      routerLink="['/home']"
+      routerLinkActive="router-link-active"
+      [ngClass]="[
+        this.isActive() == 'service' ? 'isActiveClass' : 'isDeactiveClass'
+      ]"
+    >
+      <img
+        src="../../../../assets/images/Menu Icons Active/Services--menu--icon.svg"
+        alt=""
+        *ngIf="this.isActive() == 'service'"
+      />
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Services-m-Icon.svg"
+        alt=""
+        *ngIf="this.isActive() != 'service'"
+      />
     </a>
-    <a href="">
-      <img src="../../../../assets/images/Education-m-Icon.svg" alt="" />
+    <a
+      (click)="goToEducation()"
+      routerLink="['/home']"
+      routerLinkActive="router-link-active"
+      [ngClass]="[
+        this.isActive() == 'education' ? 'isActiveClass' : 'isDeactiveClass'
+      ]"
+    >
+      <img
+        src="../../../../assets/images/Menu Icons Active/Education--menu--icon.svg"
+        alt=""
+        *ngIf="this.isActive() == 'education'"
+      />
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Education-m-Icon.svg"
+        alt=""
+        *ngIf="this.isActive() != 'education'"
+      />
     </a>
-    <a href="">
-      <img src="../../../../assets/images/Portfolio-m-Icon.svg" alt="" />
+    <a
+      (click)="goToPortfolio()"
+      routerLink="['/home']"
+      routerLinkActive="router-link-active"
+      [ngClass]="[
+        this.isActive() == 'portfolio' ? 'isActiveClass' : 'isDeactiveClass'
+      ]"
+    >
+      <img
+        src="../../../../assets/images/Menu Icons Active/Portfolio--menu--icon.svg"
+        alt=""
+        *ngIf="this.isActive() == 'portfolio'"
+      />
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Portfolio-m-Icon.svg"
+        alt=""
+        *ngIf="this.isActive() != 'portfolio'"
+      />
     </a>
-    <a href="">
-      <img src="../../../../assets/images/Blog-m-Icon.svg" alt="" />
+    <a
+      (click)="goToBlog()"
+      routerLink="['/home']"
+      routerLinkActive="router-link-active"
+      [ngClass]="[
+        this.isActive() == 'blog' ? 'isActiveClass' : 'isDeactiveClass'
+      ]"
+    >
+      <img
+        src="../../../../assets/images/Menu Icons Active/Blog--menu--icon.svg"
+        alt=""
+        *ngIf="this.isActive() == 'blog'"
+      />
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Blog-m-Icon.svg"
+        alt=""
+        *ngIf="this.isActive() != 'blog'"
+      />
     </a>
-    <a href="">
-      <img src="../../../../assets/images/Contact-m-Icon.svg" alt="" />
+    <a
+      (click)="goToContact()"
+      routerLink="['/home']"
+      routerLinkActive="router-link-active"
+      [ngClass]="[
+        this.isActive() == 'contact' ? 'isActiveClass' : 'isDeactiveClass'
+      ]"
+    >
+      <img
+        src="../../../../assets/images/Menu Icons Active/Contact--menu--icon.svg"
+        alt=""
+        *ngIf="this.isActive() == 'contact'"
+      />
+      <img
+        src="../../../../assets/images/Menu Icons Deactive/Contact-m-Icon.svg"
+        alt=""
+        *ngIf="this.isActive() != 'contact'"
+      />
     </a>
   </div>
 </div>
