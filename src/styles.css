@@ -102,6 +102,7 @@ button {
   font-size: 18px;
   background-color: var(--main-color);
   color: #ffffff;
+  cursor: pointer;
 }
 /* Start Section Heading Component */
 .container .section-heading {

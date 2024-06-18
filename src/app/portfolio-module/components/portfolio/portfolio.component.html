@@ -1,1 +1,90 @@
-<p>portfolio works!</p>
+<div class="container">
+  <div class="section-heading">
+    <div class="heading-block">
+      <h2>Portfolio</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+        sint?
+      </p>
+    </div>
+  </div>
+  <div class="portfolio">
+    <ul>
+      <li
+        (click)="this.switchTo('all')"
+        [ngStyle]="{
+          color: this.toStyle() == 'all' ? '#2a4fa7' : 'black'
+        }"
+      >
+        All Categories
+      </li>
+      <li
+        (click)="this.switchTo('ui')"
+        [ngStyle]="{
+          color: this.toStyle() == 'ui' ? '#2a4fa7' : 'black'
+        }"
+      >
+        UI Design
+      </li>
+      <li
+        (click)="this.switchTo('web')"
+        [ngStyle]="{
+          color: this.toStyle() == 'web' ? '#2a4fa7' : 'black'
+        }"
+      >
+        Web Template
+      </li>
+      <li
+        (click)="this.switchTo('logo')"
+        [ngStyle]="{
+          color: this.toStyle() == 'logo' ? '#2a4fa7' : 'black'
+        }"
+      >
+        Logo
+      </li>
+      <li
+        (click)="this.switchTo('brand')"
+        [ngStyle]="{
+          color: this.toStyle() == 'brand' ? '#2a4fa7' : 'black'
+        }"
+      >
+        Branding
+      </li>
+    </ul>
+    <div class="img">
+      <img
+        src="../../../../assets/images/Services__Images/design__1.svg"
+        alt=""
+      />
+      <img
+        src="../../../../assets/images/Services__Images/design__2.png"
+        alt=""
+      />
+      <img
+        src="../../../../assets/images/Services__Images/design__3.svg"
+        alt=""
+      />
+
+      <img
+        src="../../../../assets/images/Services__Images/design__4.svg"
+        alt=""
+      />
+      <img
+        src="../../../../assets/images/Services__Images/website__1.svg"
+        alt=""
+      />
+      <img
+        src="../../../../assets/images/Services__Images/website__2.svg"
+        alt=""
+      />
+      <img
+        src="../../../../assets/images/Services__Images/website__3.jpeg"
+        alt=""
+      />
+      <img
+        src="../../../../assets/images/Services__Images/design__5.svg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
