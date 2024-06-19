@@ -11,6 +11,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     FooterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, GoogleMapsModule],
   exports: [
     NavBarComponent,
     AboutComponent,

@@ -1,9 +1,12 @@
 /* Portfolio Version Created by Mohamed Machlou */
 .container .contact {
   width: 100%;
-  padding: 20px;
-  background-color: #ffff00;
+  padding: 20px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* background-color: #ffff00; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
 }
@@ -14,7 +17,7 @@
 }
 .container .contact .infos .info {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 6px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -55,7 +58,7 @@ form {
   height: 645px;
   padding: 40px 25px 25px;
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 form .form-group {
   width: 100%;
@@ -76,6 +79,8 @@ form .form-group input {
   background-color: #c3c6c9;
   margin-bottom: 8px;
   border: none;
+  border-radius: 6px;
+  caret-color: black;
 }
 form .form-group textarea {
   width: 100%;
@@ -83,8 +88,18 @@ form .form-group textarea {
   background-color: #d7dde2;
   margin-bottom: 8px;
   border: none;
+  border-radius: 6px;
+  caret-color: black;
 }
 form button {
   width: 180px;
   height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.container .contact .maps {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }

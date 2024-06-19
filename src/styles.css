@@ -106,7 +106,8 @@ button {
 }
 /* Start Section Heading Component */
 .container .section-heading {
-  width: 100%;
+  width: 90%;
+  margin-top: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
