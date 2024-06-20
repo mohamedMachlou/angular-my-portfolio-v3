@@ -51,6 +51,7 @@
   height: 30px;
   border-radius: 50%;
   background: var(--main-color);
+  cursor: pointer;
 }
 .infos .image .social-media .img img {
   width: 20px;

@@ -29,7 +29,7 @@
     </a>
     <a
       (click)="goToSection('service')"
-      routerLink="['/home']"
+      routerLink="['/service']"
       routerLinkActive="router-link-active"
       [ngClass]="[
         this.isActive() == 'service' ? 'isActiveClass' : 'isDeactiveClass'
@@ -48,7 +48,7 @@
     </a>
     <a
       (click)="goToSection('education')"
-      routerLink="['/home']"
+      routerLink="['/education']"
       routerLinkActive="router-link-active"
       [ngClass]="[
         this.isActive() == 'education' ? 'isActiveClass' : 'isDeactiveClass'
@@ -124,3 +124,13 @@
     </a>
   </div>
 </div>
+<!-- Sections -->
+<welcome></welcome>
+<my-services></my-services>
+<price-plans></price-plans>
+<recommendations></recommendations>
+<education></education>
+<portfolio></portfolio>
+<blog></blog>
+<contact></contact>
+<footer></footer>
