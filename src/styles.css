@@ -11,6 +11,49 @@
   --background-color: #e7e7e7;
 }
 /* End Variables  */
+/* Button Component */
+button {
+  width: 120px;
+  height: 38px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: var(--main-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Start Section Heading Component */
+.container .section-heading {
+  width: 90%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-heading .heading-block {
+  width: 45%;
+  padding: 20px;
+  margin: 30px 0px;
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-heading .heading-block h2 {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.section-heading .heading-block p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--gray-color);
+}
+/* End Section Heading Component */
+
 /* Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
@@ -72,6 +115,7 @@ body {
   background-color: #ffffff;
   height: 1400px;
   width: 330px;
+  margin-bottom: 30px;
   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -92,45 +136,39 @@ body {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border-radius: 8px;
 }
-/* Button Component */
-button {
-  width: 120px;
-  height: 38px;
-  border-radius: 6px;
-  border: none;
-  font-weight: 500;
-  font-size: 18px;
-  background-color: var(--main-color);
-  color: #ffffff;
-  cursor: pointer;
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1170px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    margin-left: 20%;
+    height: 1400px;
+    width: 630px;
+  }
 }
-/* Start Section Heading Component */
-.container .section-heading {
-  width: 90%;
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .about {
+    margin-left: 5%;
+    height: 1400px;
+    width: 630px;
+  }
 }
-.section-heading .heading-block {
-  width: 45%;
-  padding: 20px;
-  margin: 30px 0px;
-  /* background-color: rgb(255, 255, 255); */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/* Large devices (desktops, 768px and down) */
+@media (max-width: 768px) {
+  .about {
+    margin-left: 5%;
+    height: 1400px;
+    width: 450px;
+  }
 }
-.section-heading .heading-block h2 {
-  margin: 0px;
-  font-weight: 600;
-  font-size: 25px;
+/* Large devices (desktops, 576px and down) */
+@media (max-width: 576px) {
+  .about {
+    /* margin-left: 5%; */
+    height: 1400px;
+    width: 370px;
+  }
 }
-.section-heading .heading-block p {
-  font-weight: 400;
-  font-size: 15px;
-  color: var(--gray-color);
-}
-/* End Section Heading Component */
