@@ -144,6 +144,7 @@
     width: 450px;
   }
 }
+
 /* Large devices (desktops, 576px and down) */
 @media (max-width: 576px) {
   .infos .image {
