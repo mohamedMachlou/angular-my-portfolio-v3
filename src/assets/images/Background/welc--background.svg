@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 520" width="1080" height="520">
+	<title>New Project</title>
+	<defs>
+		<image  width="1080" height="520" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABDgAAAIIAQMAAACxdMxbAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAaRJREFUeJztzjEBACAMwDDm3zTPniiAo1GQOX+Y14HVQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQz3UQxc/5gIJCJa4ZwAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff;stroke: #0000ff;stroke-miterlimit:100;stroke-width: 4 } 
+		.s1 { fill: #ffffff;stroke: #00ff00;stroke-miterlimit:100;stroke-width: 4 } 
+		.s2 { fill: #ffffff;stroke: #feb800;stroke-miterlimit:100;stroke-width: 4 } 
+		.s3 { fill: #ffffff;stroke: #ff0000;stroke-miterlimit:100;stroke-width: 4 } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<g id="Folder 1">
+		<path id="Shape 1" class="s0" d="m60.5 48.7c-6.8 0-12.2-5.4-12.2-12.2 0-6.8 5.4-12.2 12.2-12.2 6.8 0 12.2 5.4 12.2 12.2 0 6.8-5.4 12.2-12.2 12.2z"/>
+		<path id="Shape 1 copy" class="s0" d="m456.5 272.7c-6.8 0-12.2-5.4-12.2-12.2 0-6.8 5.4-12.2 12.2-12.2 6.8 0 12.2 5.4 12.2 12.2 0 6.8-5.4 12.2-12.2 12.2z"/>
+		<path id="Shape 1 copy 2" class="s1" d="m35.5 223.7c-6.8 0-12.2-5.4-12.2-12.2 0-6.8 5.4-12.2 12.2-12.2 6.8 0 12.2 5.4 12.2 12.2 0 6.8-5.4 12.2-12.2 12.2z"/>
+		<path id="Shape 1 copy 3" class="s1" d="m347.5 152.7c-6.8 0-12.2-5.4-12.2-12.2 0-6.8 5.4-12.2 12.2-12.2 6.8 0 12.2 5.4 12.2 12.2 0 6.8-5.4 12.2-12.2 12.2z"/>
+		<path id="Shape 2" class="s2" d="m305.6 322l31 11.3-7.2 19.7-31-11.3z"/>
+		<path id="Shape 2 copy" class="s2" d="m399.6 35l31 11.3-7.2 19.7-31-11.3z"/>
+		<path id="Shape 3" class="s3" d="m209.2 327.1l-7.9 6.2-9.3-3.7-1.4-10 7.9-6.2 9.3 3.7z"/>
+		<path id="Shape 3 copy" class="s3" d="m238.2 36.1l-7.9 6.2-9.3-3.7-1.4-10 7.9-6.2 9.3 3.7z"/>
+	</g>
+</svg>

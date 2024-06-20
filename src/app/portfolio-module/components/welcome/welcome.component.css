@@ -1,54 +1,63 @@
 .container .welcome {
   width: 100%;
+  background-image: url("./../../../../assets/images/Background/welc--background.svg");
   /* background-color: rgba(0, 249, 199, 0.702); */
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  /* position: relative; */
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.container .welcome .body {
+.container .welcome .block {
   width: 60%;
   padding: 35px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-radius: 8px;
-
+  position: relative;
+  /* background-color: antiquewhite; */
   display: flex;
   /* justify-content: space-evenly; */
   align-items: flex-start;
   flex-direction: column;
 }
-.container .welcome .body h2 {
+.container .welcome .block h2 {
   font-weight: 800;
   font-size: 25px;
 }
-.container .welcome .body h2 span {
+.container .welcome .block h2 span {
   color: var(--main-color);
 }
-.container .welcome .body p {
+.container .welcome .block p {
   font-weight: 400;
   font-size: 15px;
   color: rgb(133, 133, 132);
 }
-.container .welcome .body button {
+.container .welcome .block button {
   margin-top: 20px;
 }
 .container .welcome .img {
   width: 40%;
-  padding: 35px;
+  padding: 15px;
   background-color: #ffffff;
   border-radius: 8px;
-
+  background-image: url("./../../../../assets/images/my pic yellow bg.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
   display: flex;
   /* justify-content: space-evenly; */
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
 }
-.container .welcome .img img {
+.container .welcome .img img:first-child {
   width: 260px;
+  z-index: -4;
 }
-.welcome .cercle {
+.container .welcome .img img:last-child {
+  width: 260px;
+  z-index: 4;
+}
+/* .welcome .cercle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -66,22 +75,22 @@
 .welcome .blue1 {
   border: 2px solid var(--main-color);
   top: 25px;
-  left: 40px;
+  left: 450px;
 }
 .welcome .blue2 {
   border: 2px solid var(--main-color);
   top: 310px;
-  left: 400px;
+  right: 400px;
 }
 .welcome .green1 {
   border: 2px solid #46f636;
   top: 40px;
-  left: 400px;
+  right: 450px;
 }
 .welcome .green2 {
   border: 2px solid #46f636;
-  top: 350px;
-  left: 40px;
+  top: 290px;
+  right: 650px;
 }
 .welcome .blue3 {
   border: 2px solid var(--main-color);
@@ -92,4 +101,8 @@
   border: 2px solid #46f636;
   top: 140px;
   left: 490px;
+} */
+
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1200px) {
 }
