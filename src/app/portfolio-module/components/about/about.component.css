@@ -148,9 +148,9 @@
 /* Large devices (desktops, 576px and down) */
 @media (max-width: 576px) {
   .infos .image {
-    width: 375px;
+    width: 370px;
   }
   .infos .image .img {
-    width: 375px;
+    width: 370px;
   }
 }
