@@ -122,9 +122,9 @@ body {
     rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   border-radius: 8px;
 }
-.container {
-  /* background-color: #000000; */
-}
+/* .container {
+   background-color: #000000; 
+} */
 .nav {
   background-color: #ffffff;
   height: 650px;
@@ -169,6 +169,6 @@ body {
   .about {
     /* margin-left: 5%; */
     height: 1400px;
-    width: 370px;
+    width: 375px;
   }
 }
