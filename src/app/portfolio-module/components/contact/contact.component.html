@@ -74,16 +74,15 @@
       <button>SEND MESSAGE</button>
     </form>
 
-    <div class="maps">
-      <google-map
-        height="450px"
-        width="850px"
-        [center]="center"
-        [zoom]="zoom"
-        (mapClick)="moveMap($event)"
-        (mapMousemove)="move($event)"
-      >
-      </google-map>
-    </div>
+    <div class="maps"></div>
+    <google-map
+      height="450px"
+      width="600px"
+      [center]="center"
+      [zoom]="zoom"
+      (mapClick)="moveMap($event)"
+      (mapMousemove)="move($event)"
+    >
+    </google-map>
   </div>
 </div>

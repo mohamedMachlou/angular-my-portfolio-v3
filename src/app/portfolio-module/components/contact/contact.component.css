@@ -4,7 +4,7 @@
   padding: 20px 0px;
   margin-top: 40px;
   margin-bottom: 40px;
-  /* background-color: #ffff00; */
+  background-color: #ffff00;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -98,8 +98,16 @@ form button {
   font-size: 16px;
   border-radius: 6px;
 }
-.container .contact .maps {
-  width: 100%;
+/* .container .contact .maps {
+  width: 80%;
   margin-top: 100px;
   margin-bottom: 40px;
+  background-color: red;
+} */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .container .contact {
+    justify-content: center;
+  }
 }
