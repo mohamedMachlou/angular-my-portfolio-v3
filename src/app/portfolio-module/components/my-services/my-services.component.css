@@ -1,21 +1,17 @@
 /* Portfolio Version Created by Mohamed Machlou */
+
 .container .my-services {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.container .my-services .block {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   margin: 15px;
 }
 .container .my-services .service {
   width: 30%;
   padding: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -40,4 +36,22 @@
   font-weight: 500;
   font-size: 15px;
   color: #868684;
+}
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .container .my-services .service {
+    width: 40%;
+    padding: 20px;
+  }
+}
+/* Large devices (desktops, 768px and down) */
+@media (max-width: 768px) {
+  .container .my-services {
+    justify-content: center;
+    align-items: center;
+  }
+  .container .my-services .service {
+    width: 60%;
+    padding: 20px;
+  }
 }

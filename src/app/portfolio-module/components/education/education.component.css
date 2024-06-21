@@ -1,24 +1,23 @@
 /* Portfolio Version Created by Mohamed Machlou */
 .container .education {
-  width: 100%;
+  width: 98%;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .container .education .block {
   width: 100%;
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: start;
   border-radius: 8px;
 }
-.container .education .head {
+.container .education .block .head {
   width: 40%;
   padding: 20px 10px;
   /* background-color: #ffff00; */
@@ -27,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.container .education .body {
+.container .education .block .body {
   width: 60%;
   padding: 20px 10px;
   /* background-color: rgb(232, 240, 246); */
@@ -41,4 +40,33 @@
   height: 1px;
   width: 80%;
   margin: 10px 0px;
+}
+/* Extra large devices (large desktops, 993px and up) */
+@media (min-width: 993px) {
+  .container .education {
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+}
+
+/* Extra large devices (large desktops, 992px and down) */
+@media (max-width: 992px) {
+  .container .education span {
+    display: none;
+  }
+  .container .education .block .head h3,
+  .container .education .block .head h5 {
+    margin: 5px;
+  }
+  .container .education .block {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .container .education .block .head {
+    width: 80%;
+  }
+  .container .education .block .body {
+    width: 80%;
+  }
 }

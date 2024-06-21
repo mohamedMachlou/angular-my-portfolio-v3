@@ -106,7 +106,8 @@
   }
   .container .welcome .block {
     width: 80%;
-    height: 310px;
+    height: auto;
+    /* height: 310px; */
   }
   .container .welcome .img {
     width: 60%;
