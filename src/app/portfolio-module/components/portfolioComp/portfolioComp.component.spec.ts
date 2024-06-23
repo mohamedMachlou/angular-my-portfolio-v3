@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PortfolioComponent } from './portfolio.component';
+import { PortfolioComponent } from './portfolioComp.component';
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -8,10 +8,9 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PortfolioComponent]
-    })
-    .compileComponents();
-    
+      declarations: [PortfolioComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(PortfolioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

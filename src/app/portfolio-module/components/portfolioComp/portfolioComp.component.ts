@@ -1,9 +1,9 @@
 import { Component, signal } from '@angular/core';
 
 @Component({
-  selector: 'portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.css',
+  selector: 'portfolioComp',
+  templateUrl: './portfolioComp.component.html',
+  styleUrl: './portfolioComp.component.css',
 })
 export class PortfolioComponent {
   toStyle = signal<String>('all');

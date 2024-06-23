@@ -1,5 +1,4 @@
 /* Portfolio Version Created by Mohamed Machlou */
-
 .container .my-services {
   width: 100%;
   display: flex;
@@ -9,7 +8,7 @@
   margin: 15px;
 }
 .container .my-services .service {
-  width: 30%;
+  width: 32%;
   padding: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -37,21 +36,52 @@
   font-size: 15px;
   color: #868684;
 }
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1200px) {
+  .container .my-services {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .container .my-services .service {
+    width: 32%;
+    padding: 20px;
+  }
+}
 /* Large devices (desktops, 992px and down) */
 @media (max-width: 992px) {
+  .container .my-services {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .container .my-services .service {
-    width: 40%;
+    width: 32%;
     padding: 20px;
   }
 }
 /* Large devices (desktops, 768px and down) */
 @media (max-width: 768px) {
   .container .my-services {
-    justify-content: center;
-    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .container .my-services .service {
-    width: 60%;
+    width: 49%;
     padding: 20px;
+  }
+}
+/* Large devices (desktops, 576px and down) */
+@media (max-width: 576px) {
+  .container .my-services {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .container .my-services .service {
+    width: 90%;
+    padding: 20px;
+    margin-left: 2%;
   }
 }

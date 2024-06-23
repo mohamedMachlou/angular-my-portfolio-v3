@@ -7,7 +7,7 @@ import { MyServicesComponent } from './components/my-services/my-services.compon
 import { PricePlansComponent } from './components/price-plans/price-plans.component';
 import { RecommendationsComponent } from './components/recommendations/recommendations.component';
 import { EducationComponent } from './components/education/education.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { PortfolioComponent } from './components/portfolioComp/portfolioComp.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';

@@ -3,13 +3,13 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   /* background-color: #ececec; */
 }
 .container .prices .price {
   background-color: #ffffff;
-  width: 30%;
+  width: 32%;
   /* width: 270px; */
   height: 620px;
   margin: 0px 4px;
@@ -70,6 +70,7 @@
   font-weight: --text-para-weight;
   font-size: var(--text-para-size);
   color: var(--text-gray);
+  padding: 0px 6px;
 }
 .container .prices .price .services {
   background-color: #eb3232;
@@ -121,26 +122,64 @@
 .container .prices .price:nth-child(2) {
   height: 660px;
 }
-/* Large devices (desktops, 992px and down) */
-@media (max-width: 992px) {
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1200px) {
+  .container .prices {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .container .prices .price {
-    width: 40%;
+    width: 32%;
+    height: 620px;
+  }
+  .container .prices .price:nth-child(2) {
+    height: 620px;
   }
   .container .prices .price:last-child {
     margin-top: 30px;
   }
 }
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .container .prices {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .container .prices .price {
-    width: 70%;
-    margin-top: 30px;
+    width: 47%;
+    height: 620px;
   }
 }
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .container .prices {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .container .prices .price {
-    width: 80%;
+    width: 100%;
     margin-top: 30px;
+  }
+  .container .prices .price .body p {
+    padding: 0px 10px;
+  }
+}
+git 
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  .container .prices {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .container .prices .price {
+    width: 91%;
+    margin-top: 30px;
+  }
+  .container .prices .price .body p {
+    padding: 0px 10px;
   }
 }

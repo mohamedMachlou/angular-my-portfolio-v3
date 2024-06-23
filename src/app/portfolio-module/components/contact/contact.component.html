@@ -73,11 +73,9 @@
       </div>
       <button>SEND MESSAGE</button>
     </form>
-
-    <div class="maps"></div>
+  </div>
+  <div class="maps">
     <google-map
-      height="450px"
-      width="600px"
       [center]="center"
       [zoom]="zoom"
       (mapClick)="moveMap($event)"
