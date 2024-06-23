@@ -52,6 +52,20 @@ button {
   font-size: 15px;
   color: var(--gray-color);
 }
+/* Small devices (landscape phones, 400px and up) */
+@media (max-width: 400px) {
+  .section-heading .heading-block {
+    width: 95%;
+  }
+  .section-heading .heading-block h2 {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .section-heading .heading-block p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
 /* End Section Heading Component */
 
 /* Start Global Rules */
@@ -69,6 +83,13 @@ body {
   background-color: var(--background-color);
 }
 /* Start Media Queries */
+/* Small devices (Portrait phones, 576px and up) */
+@media (min-width: 300px) {
+  .portfolio {
+    width: 360px;
+    background-color: rgb(97, 245, 11);
+  }
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .portfolio {
@@ -133,7 +154,6 @@ body {
   right: 0px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  border-radius: 8px;
 }
 /* Large devices (desktops, 1200px and down) */
 @media (max-width: 1200px) {
@@ -179,5 +199,21 @@ body {
     margin-left: 5%;
     margin-right: 10%;
     height: 1400px;
+  }
+}
+/* Large devices (desktops, 400px and down) */
+@media (max-width: 400px) {
+  .about {
+    width: 86%;
+    margin-left: 0px;
+    margin-right: 10%;
+    height: 1400px;
+  }
+
+  .nav {
+    background-color: #ffffff;
+    height: 650px;
+    width: 40px;
+    top: 1px;
   }
 }

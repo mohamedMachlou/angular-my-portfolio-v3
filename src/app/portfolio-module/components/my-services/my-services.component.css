@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 15px;
+  margin: 15px 0px;
 }
 .container .my-services .service {
   width: 32%;
@@ -83,5 +83,17 @@
     width: 90%;
     padding: 20px;
     margin-left: 2%;
+  }
+}
+/* Large devices (desktops,  400px and down) */
+@media (max-width: 400px) {
+  .container .my-services {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .container .my-services .service {
+    width: 86%;
+    margin-left: 2%;
+    margin-right: 12%;
   }
 }

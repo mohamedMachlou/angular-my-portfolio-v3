@@ -39,63 +39,12 @@
 .container .welcome .img {
   width: 60%;
   padding: 15px;
-  /* background-color: #16db44; */
   border-radius: 8px;
   background-image: url("./../../../../assets/images/my pic yellow bg.png");
   background-size: 300px;
   background-repeat: no-repeat;
   background-position: center;
 }
-.container .welcome .img img {
-  width: 260px;
-}
-
-/* .welcome .cercle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  position: absolute;
-}
-.welcome .square {
-  width: 15px;
-  height: 15px;
-  transform: rotate(30deg);
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.welcome .blue1 {
-  border: 2px solid var(--main-color);
-  top: 25px;
-  left: 450px;
-}
-.welcome .blue2 {
-  border: 2px solid var(--main-color);
-  top: 310px;
-  right: 400px;
-}
-.welcome .green1 {
-  border: 2px solid #46f636;
-  top: 40px;
-  right: 450px;
-}
-.welcome .green2 {
-  border: 2px solid #46f636;
-  top: 290px;
-  right: 650px;
-}
-.welcome .blue3 {
-  border: 2px solid var(--main-color);
-  top: 290px;
-  left: 240px;
-}
-.welcome .green3 {
-  border: 2px solid #46f636;
-  top: 140px;
-  left: 490px;
-} */
-
 /* Large devices (desktops, 1200px and down) */
 @media (max-width: 1200px) {
   .container .welcome {
@@ -144,5 +93,18 @@
     width: 81%;
     margin-left: 7%;
     margin-right: 11%;
+  }
+}
+/* Large devices (desktops,  400px and down) */
+@media (max-width: 400px) {
+  .container .welcome {
+    width: 86%;
+    margin-left: 2%;
+    margin-right: 1%;
+  }
+  .container .welcome .img {
+    width: 100%;
+    padding: 15px;
+    background-size: 260px;
   }
 }

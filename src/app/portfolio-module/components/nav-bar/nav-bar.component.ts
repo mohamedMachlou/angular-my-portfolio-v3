@@ -12,18 +12,4 @@ export class NavBarComponent {
     document.getElementById(name)?.scrollIntoView();
     this.isActive.set(name);
   }
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: Event) {
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    const sections: any = document.querySelectorAll('section');
-
-    sections.forEach((section: HTMLElement) => {
-      if (
-        section.offsetTop <= scrollPosition &&
-        section.offsetTop + section.offsetHeight > scrollPosition
-      ) {
-        console.log(sections);
-      }
-    });
-  }
 }

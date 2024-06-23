@@ -76,7 +76,7 @@
 /* Extra large devices (large desktops, 576px and down) */
 @media (max-width: 576px) {
   .container .education {
-    width: 80%;
+    width: 82%;
     margin: 0px 6%;
   }
   .container .education .block .head {
@@ -92,5 +92,17 @@
   .container .education .block .body {
     width: 70%;
     padding: 10px;
+  }
+}
+/* Small devices (landscape phones, 400px and up) */
+@media (max-width: 400px) {
+  .container .education {
+    width: 86%;
+    margin-left: 2%;
+    margin-right: 12%;
+  }
+  .container .education .block .body {
+    width: 100%;
+    padding: 5%;
   }
 }

@@ -106,3 +106,15 @@
     margin-bottom: 10px;
   }
 }
+/* Small devices (landscape phones, 400px and up) */
+@media (max-width: 400px) {
+  .recommendations {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .recommendations .block {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}

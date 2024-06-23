@@ -182,3 +182,11 @@
     padding: 0px 10px;
   }
 }
+/* Small devices (landscape phones, 400px and down) */
+@media (max-width: 400px) {
+  .container .prices {
+    width: 94%;
+    margin-left: 1%;
+    margin-right: 5%;
+  }
+}
