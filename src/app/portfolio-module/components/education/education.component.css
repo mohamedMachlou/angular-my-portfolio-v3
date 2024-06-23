@@ -1,12 +1,15 @@
 /* Portfolio Version Created by Mohamed Machlou */
 .container .education {
-  width: 98%;
+  width: 100%;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .container .education .block {
   width: 100%;
@@ -38,35 +41,56 @@
 .container .education span {
   background-color: var(--text-gray);
   height: 1px;
-  width: 80%;
+  width: 100%;
   margin: 10px 0px;
 }
-/* Extra large devices (large desktops, 993px and up) */
-@media (min-width: 993px) {
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
   .container .education {
-    background-color: #ffffff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 90%;
+    margin: 0px 5%;
   }
 }
-
-/* Extra large devices (large desktops, 992px and down) */
-@media (max-width: 992px) {
-  .container .education span {
-    display: none;
-  }
-  .container .education .block .head h3,
-  .container .education .block .head h5 {
-    margin: 5px;
-  }
-  .container .education .block {
-    width: 80%;
-    margin-bottom: 10px;
+/* Extra large devices (large desktops, 768px and down) */
+@media (max-width: 768px) {
+  .container .education {
+    width: 89%;
+    margin: 0px 6%;
   }
   .container .education .block .head {
-    width: 80%;
+    width: 70%;
+    padding: 10px;
+  }
+  .container .education .block .head h3 {
+    margin-bottom: 6px;
+  }
+  .container .education .block .head h5 {
+    margin: 0px;
   }
   .container .education .block .body {
+    width: 70%;
+    padding: 10px;
+  }
+}
+/* Extra large devices (large desktops, 576px and down) */
+@media (max-width: 576px) {
+  .container .education {
     width: 80%;
+    margin: 0px 6%;
+  }
+  .container .education .block .head {
+    width: 70%;
+    padding: 10px;
+  }
+  .container .education .block .head h3 {
+    margin-bottom: 6px;
+  }
+  .container .education .block .head h5 {
+    margin: 0px;
+  }
+  .container .education .block .body {
+    width: 70%;
+    padding: 10px;
   }
 }
