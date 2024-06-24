@@ -87,14 +87,14 @@ body {
 @media (min-width: 300px) {
   .portfolio {
     width: 360px;
-    background-color: rgb(97, 245, 11);
+    /* background-color: rgb(97, 245, 11); */
   }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .portfolio {
     width: 576px;
-    background-color: rgb(97, 245, 11);
+    /* background-color: rgb(97, 245, 11); */
   }
 }
 
@@ -102,7 +102,7 @@ body {
 @media (min-width: 768px) {
   .portfolio {
     width: 768px;
-    background-color: rgb(59, 157, 226);
+    /* background-color: rgb(59, 157, 226); */
   }
 }
 
@@ -110,7 +110,7 @@ body {
 @media (min-width: 992px) {
   .portfolio {
     width: 992px;
-    background-color: rgb(250, 250, 38);
+    /* background-color: rgb(250, 250, 38); */
   }
 }
 
@@ -160,7 +160,7 @@ body {
   .portfolio {
     display: flex;
     flex-direction: column;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     align-items: center;
   }
   .about {
