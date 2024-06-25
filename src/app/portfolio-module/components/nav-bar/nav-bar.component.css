@@ -3,7 +3,7 @@
   height: 100%; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-end;
 }
 .nav .contrast {
@@ -12,7 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 70px;
   cursor: pointer;
 }
 .nav .menu {
