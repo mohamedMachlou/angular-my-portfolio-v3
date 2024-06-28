@@ -209,4 +209,7 @@
 }
 /* Large devices (desktops, 400px and down) */
 @media (max-width: 400px) {
+  .infos .image .social-media {
+    width: 70%;
+  }
 }

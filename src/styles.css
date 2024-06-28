@@ -226,4 +226,7 @@ body {
     top: 0px;
     right: 0;
   }
+  .about {
+    margin-top: 50px;
+  }
 }
