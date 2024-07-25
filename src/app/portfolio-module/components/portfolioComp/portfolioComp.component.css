@@ -63,7 +63,7 @@
   .container .portfolio .portfolio_img {
     width: 100%;
   }
-  .container .portfolio .portfolio_img img {
+  .container .portfolio .portfolio_img .show-img {
     width: 49%;
   }
 }
@@ -90,7 +90,7 @@
   .container .portfolio .portfolio_img {
     width: 100%;
   }
-  .container .portfolio .portfolio_img img {
+  .container .portfolio .portfolio_img .show-img {
     width: 100%;
     margin: 20px 0px;
   }
@@ -116,7 +116,7 @@
   .container .portfolio .portfolio_img {
     width: 100%;
   }
-  .container .portfolio .portfolio_img img {
+  .container .portfolio .portfolio_img .show-img {
     width: 100%;
     margin: 20px 0px;
   }

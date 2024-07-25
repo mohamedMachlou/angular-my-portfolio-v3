@@ -49,16 +49,16 @@ export class PortfolioComponent implements OnInit {
 
   //show All Images Array
   showImg: String[] = [
-    ...this.design_img,
     ...this.web_templates_img,
+    ...this.design_img,
     ...this.web_apps_img,
     ...this.logo_img,
   ];
   //show All Images Method
   show_all() {
     this.showImg = [
-      ...this.design_img,
       ...this.web_templates_img,
+      ...this.design_img,
       ...this.web_apps_img,
       ...this.logo_img,
     ];
