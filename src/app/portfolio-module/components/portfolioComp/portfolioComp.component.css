@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   gap: 2%;
   align-items: center;
-  /* background-color: #ffffff; */
+  background-color: #191935;
 }
 .container .portfolio .img img {
   width: 32%;
