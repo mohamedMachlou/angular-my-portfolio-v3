@@ -52,44 +52,8 @@
         Logo
       </li>
     </ul>
-    <div class="img">
-      <img
-        src="../../../../assets/images/Services__Images/design__1.svg"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/design__2.png"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/design__3.svg"
-        alt=""
-      />
-
-      <img
-        src="../../../../assets/images/Services__Images/design__4.svg"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/website__1.svg"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/website__2.svg"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/website__3.svg"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/website__4.svg"
-        alt=""
-      />
-      <img
-        src="../../../../assets/images/Services__Images/design__5.svg"
-        alt=""
-      />
+    <div class="portfolio_img" *ngFor="let source of design_img()">
+      <img [src]="source" alt="" />
     </div>
   </div>
 </div>
