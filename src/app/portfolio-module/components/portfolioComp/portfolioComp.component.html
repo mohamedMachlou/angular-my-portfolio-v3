@@ -12,7 +12,7 @@
   <div class="portfolio">
     <ul>
       <li
-        (click)="this.switchTo('all')"
+        (click)="this.switchTo('all'); show_all()"
         [ngStyle]="{
           color: this.toStyle() == 'all' ? '#2a4fa7' : 'black'
         }"
@@ -20,7 +20,7 @@
         All Categories
       </li>
       <li
-        (click)="this.switchTo('ui')"
+        (click)="this.switchTo('ui'); show_design_img()"
         [ngStyle]="{
           color: this.toStyle() == 'ui' ? '#2a4fa7' : 'black'
         }"
@@ -28,7 +28,7 @@
         UI Design
       </li>
       <li
-        (click)="this.switchTo('web')"
+        (click)="this.switchTo('web'); show_web_tem_img()"
         [ngStyle]="{
           color: this.toStyle() == 'web' ? '#2a4fa7' : 'black'
         }"
@@ -36,7 +36,7 @@
         Web Template
       </li>
       <li
-        (click)="this.switchTo('logo')"
+        (click)="this.switchTo('logo'); show_web_apps_img()"
         [ngStyle]="{
           color: this.toStyle() == 'logo' ? '#2a4fa7' : 'black'
         }"
@@ -44,7 +44,7 @@
         Web Apps
       </li>
       <li
-        (click)="this.switchTo('brand')"
+        (click)="this.switchTo('brand'); show_logo_img()"
         [ngStyle]="{
           color: this.toStyle() == 'brand' ? '#2a4fa7' : 'black'
         }"
@@ -52,8 +52,10 @@
         Logo
       </li>
     </ul>
-    <div class="portfolio_img" *ngFor="let source of design_img()">
-      <img [src]="source" alt="" />
+    <div class="portfolio_img">
+      <div class="show-img" *ngFor="let source of showImg">
+        <img [src]="source" alt="" />
+      </div>
     </div>
   </div>
 </div>

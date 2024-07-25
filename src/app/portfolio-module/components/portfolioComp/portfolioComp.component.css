@@ -30,10 +30,15 @@
   flex-wrap: wrap;
   gap: 2%;
   align-items: center;
-  background-color: #191935;
+}
+.container .portfolio .portfolio_img .show-img {
+  width: 32%;
+  display: flex;
+
+  align-items: center;
 }
 .container .portfolio .portfolio_img img {
-  width: 32%;
+  width: 100%;
   display: block;
   margin-bottom: 20px;
   border-radius: 7px;
