@@ -12,7 +12,7 @@
   <div class="portfolio">
     <ul>
       <li
-        (click)="this.switchTo('all'); show_all()"
+        (click)="this.switchTo('all'); show_all(); showArray(myArray)"
         [ngStyle]="{
           color: this.toStyle() == 'all' ? '#2a4fa7' : 'black'
         }"
