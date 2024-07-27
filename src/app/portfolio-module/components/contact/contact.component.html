@@ -57,19 +57,78 @@
     </div>
     <form action="">
       <div class="form-group">
-        <label for="">Your Full Name (Required)</label>
-        <input type="text" />
+        <label for="">Your Full Name <span>*</span></label>
+        <input
+          required
+          minlength="4"
+          maxlength="70"
+          pattern="[a-zA-Z]+"
+          #fullname="ngModel"
+          ngModel
+          name="fullname"
+          (change)="validate(fullname)"
+          type="text"
+        />
+        <div class="alert-success" *ngIf="fullname.dirty && fullname.valid">
+          Données sont correctes
+        </div>
+        <div class="alert-danger" *ngIf="fullname.touched && !fullname.valid">
+          <div *ngIf="fullname.errors?.['required']">
+            Ce champs est obligatoire !!
+          </div>
+          <div *ngIf="fullname.errors?.['minlength']">
+            Ce champs doit avoir
+            {{ fullname.errors?.['minlength'].actualLength
+
+
+
+            }}/{{ fullname.errors?.['minlength'].requiredLength }} chars !!
+          </div>
+          <div *ngIf="fullname.errors?.['pattern']">
+            Ce champs doit etre alpha !!
+          </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="">Your Email</label>
-        <input type="text" />
+        <label for="">Your Email<span>*</span></label>
+        <input
+          required
+          minlength="4"
+          maxlength="70"
+          pattern="[a-zA-Z]+"
+          #email="ngModel"
+          ngModel
+          name="email"
+          (change)="validate(email)"
+          type="text"
+        />
+        <div class="alert-success" *ngIf="email.dirty && email.valid">
+          Données sont correctes
+        </div>
+        <div class="alert-danger" *ngIf="email.touched && !email.valid">
+          <div *ngIf="email.errors?.['required']">
+            Ce champs est obligatoire !!
+          </div>
+          <div *ngIf="email.errors?.['minlength']">
+            Ce champs doit avoir
+            {{ email.errors?.['minlength'].actualLength
+
+
+
+            }}/{{ email.errors?.['minlength'].requiredLength }} chars !!
+          </div>
+          <div *ngIf="email.errors?.['pattern']">
+            Ce champs doit etre alpha !!
+          </div>
+        </div>
       </div>
+
       <div class="form-group">
         <label for="">Subject</label>
         <input type="text" />
       </div>
       <div class="form-group">
-        <label for="">Your Message</label>
+        <label for="">Your Message<span>*</span></label>
         <textarea name="" id=""></textarea>
       </div>
       <button>SEND MESSAGE</button>

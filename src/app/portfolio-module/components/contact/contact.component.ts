@@ -9,4 +9,8 @@ export class ContactComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  validate(fullna: any) {
+    console.log(fullna);
+  }
 }

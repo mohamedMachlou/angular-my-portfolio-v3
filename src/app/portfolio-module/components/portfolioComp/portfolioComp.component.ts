@@ -79,34 +79,6 @@ export class PortfolioComponent implements OnInit {
   show_logo_img() {
     this.showImg = [...this.logo_img];
   }
-  // Showing and Organisation Images
-  myArray: number[] = [
-    0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-  ];
-  displayArr: number[] = [];
-  start = signal<number>(0);
-  nbElem = signal<number>(8);
-  // Increase the start number
-  incraeseStar() {
-    if (this.start() === 0) {
-      console.log(`Firstly start\'value is : ${this.start()}`);
-      this.start.set(9);
-    } else if (this.start() > 0) {
-      this.start.set(this.start() + 8);
-      console.log(`start\'value is : ${this.start()}`);
-    }
-  }
-  showArray(arr: any[]) {
-    if (arr.length <= 9) {
-      this.displayArr = arr.splice(0, 9);
-    } else if (arr.length > 9) {
-      this.incraeseStar();
-      this.displayArr = arr.splice(this.start(), this.nbElem());
-    }
-    console.log(this.displayArr);
-  }
-  ngOnInit(): void {
-    this.showArray(this.myArray);
-  }
+
+  ngOnInit(): void {}
 }
