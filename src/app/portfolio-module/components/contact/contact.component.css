@@ -77,16 +77,17 @@ form .form-group label {
 form .form-group input {
   width: 100%;
   height: 35px;
-  background-color: #c3c6c9;
+  background-color: #e3f1ea;
   margin-bottom: 8px;
   border: none;
   border-radius: 6px;
   caret-color: black;
 }
-form .form-group input:focus {
+/* form .form-group input:focus {
   outline-color: var(--main-color);
   caret-color: var(--main-color);
-}
+} */
+
 form .form-group textarea {
   width: 100%;
   min-height: 80px;
@@ -97,16 +98,15 @@ form .form-group textarea {
   border-radius: 6px;
   caret-color: black;
 }
-form .form-group textarea:focus {
-  outline-color: var(--main-color);
-  caret-color: var(--main-color);
-}
 form button {
   width: 180px;
   height: 30px;
   font-weight: 500;
   font-size: 16px;
   border-radius: 6px;
+}
+form button:disabled {
+  background-color: #728ecf;
 }
 form span {
   font-weight: 800;
@@ -136,6 +136,12 @@ form span {
   background-color: #f5c4c4;
   color: #8f0f0f;
   /* color: #de3f3f; */
+}
+.ng-dirty.ng-valid {
+  outline-color: #37dd5b;
+}
+.ng-dirty.ng-invalid {
+  outline-color: #f82626;
 }
 
 /* Large devices (desktops, 1200px and up) */

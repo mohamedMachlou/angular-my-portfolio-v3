@@ -10,7 +10,9 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  validate(fullna: any) {
-    console.log(fullna);
+  validate(fullna: any) {}
+
+  showForm(f: object) {
+    console.log(f);
   }
 }

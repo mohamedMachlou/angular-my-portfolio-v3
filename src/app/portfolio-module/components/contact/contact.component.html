@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <form action="">
+    <form #f="ngForm" (ngSubmit)="showForm(f)">
       <div class="form-group">
         <label for="">Your Full Name <span>*</span></label>
         <input
@@ -79,25 +79,6 @@
           <div *ngIf="fullname.errors?.['minlength']">
             Ce champs doit avoir
             {{ fullname.errors?.['minlength'].actualLength
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             }}/{{ fullname.errors?.['minlength'].requiredLength }} chars !!
           </div>
@@ -129,6 +110,9 @@
           <div *ngIf="email.errors?.['minlength']">
             Ce champs doit avoir
             {{ email.errors?.['minlength'].actualLength
+
+
+
 
 
 
@@ -170,11 +154,14 @@
 
 
 
+
+
+
             }}/{{ message.errors?.['minlength'].requiredLength }} chars !!
           </div>
         </div>
       </div>
-      <button>SEND MESSAGE</button>
+      <button [disabled]="!f.valid">SEND MESSAGE</button>
     </form>
   </div>
   <!-- <div class="maps">
