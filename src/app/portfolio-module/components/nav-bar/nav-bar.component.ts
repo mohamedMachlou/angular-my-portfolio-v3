@@ -7,7 +7,7 @@ import { AppearanceService } from '../../services/appearance.service';
   styleUrl: './nav-bar.component.css',
 })
 export class NavBarComponent implements OnInit {
-  isActive = signal<String>('');
+  isActive = signal<String>('home');
   switchClr = signal<boolean>(false);
 
   // Injection Appearance Service
