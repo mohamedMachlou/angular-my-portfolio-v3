@@ -1,7 +1,13 @@
 <!-- Portfolio Version Created by Mohamed Machlou  -->
-<div class="nav">
+<div
+  class="nav"
+  [style]="{
+    'background-color': this.switchClr() ? 'var(--main-back-color)' : 'white'
+  }"
+>
   <div class="contrast">
     <a
+      (click)="switchColor()"
       class="isDeactiveClass"
       routerLink="['/home']"
       routerLinkActive="router-link-active"
@@ -22,10 +28,12 @@
       ]"
     >
       <img
+        style="display: flex"
         src="../../../../assets/images/Menu Icons Active/home--menu--icon.svg"
         alt=""
       />
       <img
+        style="display: none"
         src="../../../../assets/images/Menu Icons Deactive/Home-m-Icon.svg"
         alt=""
       />
@@ -39,10 +47,12 @@
       ]"
     >
       <img
+        style="display: none"
         src="../../../../assets/images/Menu Icons Active/Services--menu--icon.svg"
         alt=""
       />
       <img
+        style="display: flex"
         src="../../../../assets/images/Menu Icons Deactive/Services-m-Icon.svg"
         alt=""
       />
@@ -56,10 +66,12 @@
       ]"
     >
       <img
+        style="display: none"
         src="../../../../assets/images/Menu Icons Active/Education--menu--icon.svg"
         alt=""
       />
       <img
+        style="display: flex"
         src="../../../../assets/images/Menu Icons Deactive/Education-m-Icon.svg"
         alt=""
       />
@@ -73,10 +85,12 @@
       ]"
     >
       <img
+        style="display: none"
         src="../../../../assets/images/Menu Icons Active/Portfolio--menu--icon.svg"
         alt=""
       />
       <img
+        style="display: flex"
         src="../../../../assets/images/Menu Icons Deactive/Portfolio-m-Icon.svg"
         alt=""
       />
@@ -90,10 +104,12 @@
       ]"
     >
       <img
+        style="display: none"
         src="../../../../assets/images/Menu Icons Active/Blog--menu--icon.svg"
         alt=""
       />
       <img
+        style="display: flex"
         src="../../../../assets/images/Menu Icons Deactive/Blog-m-Icon.svg"
         alt=""
       />
@@ -107,10 +123,12 @@
       ]"
     >
       <img
+        style="display: none"
         src="../../../../assets/images/Menu Icons Active/Contact--menu--icon.svg"
         alt=""
       />
       <img
+        style="display: flex"
         src="../../../../assets/images/Menu Icons Deactive/Contact-m-Icon.svg"
         alt=""
       />

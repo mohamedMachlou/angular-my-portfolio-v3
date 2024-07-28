@@ -1,18 +1,34 @@
-import { Component, HostListener, signal } from '@angular/core';
+import { Component, HostListener, inject, OnInit, signal } from '@angular/core';
+import { AppearanceService } from '../../services/appearance.service';
 
 @Component({
   selector: 'nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css',
 })
-export class NavBarComponent {
-  isActive = signal<String>('home');
+export class NavBarComponent implements OnInit {
+  isActive = signal<String>('');
+  switchClr = signal<boolean>(false);
+
+  // Injection Appearance Service
+  appearanceService = inject(AppearanceService);
 
   goToSection(name: string) {
     document.getElementById(name)?.scrollIntoView();
     this.isActive.set(name);
   }
+
+  //
+  switchColor() {
+    this.appearanceService.toSwitchContrast();
+    this.switchClr.set(this.appearanceService.switchContrast());
+  }
+
+  ngOnInit(): void {}
 }
+/////////////////////////////////////////////////////////
+///////////// Start Scrolling Function //////////////////
+/////////////////////////////////////////////////////////
 let currentSection = 'home';
 window.addEventListener('scroll', () => {
   const divs = document.querySelectorAll('div');
@@ -50,28 +66,6 @@ window.addEventListener('scroll', () => {
         link.children[0].setAttribute('style', 'display: none');
         link.children[1].setAttribute('style', 'display: flex');
       });
-      // links.map((link, index2) => {
-      //   link.classList.remove('isDeactiveClass');
-      //   link.classList.remove('isActiveClass');
-      //   link.classList.add('isDeactiveClass');
-
-      //   //Switch links images
-      //   link.children[0].removeAttribute('style');
-      //   link.children[1].removeAttribute('style');
-      //   link.children[0].setAttribute('style', 'display: none');
-      //   link.children[1].setAttribute('style', 'display: flex');
-      //   // console.log(link.children[1].removeAttribute);
-      // });
-
-      // links[index1].children[0].removeAttribute('style');
-      // links[index1].children[1].removeAttribute('style');
-      // links[index1].children[0].setAttribute('style', 'display: flex');
-      // links[index1].classList.remove('isDeactiveClass');
-      // links[index1].classList.add('isActiveClass');
     }
   });
-
-  setTimeout(() => {
-    // console.log(`currentSection is : ${currentSection}`);
-  }, 500);
 });

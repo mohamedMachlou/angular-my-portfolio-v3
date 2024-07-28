@@ -62,7 +62,7 @@
           required
           minlength="4"
           maxlength="70"
-          pattern="[a-zA-Z]+"
+          pattern="[a-zA-Z ]+"
           #fullname="ngModel"
           ngModel
           name="fullname"
@@ -79,6 +79,7 @@
           <div *ngIf="fullname.errors?.['minlength']">
             Ce champs doit avoir
             {{ fullname.errors?.['minlength'].actualLength
+
 
             }}/{{ fullname.errors?.['minlength'].requiredLength }} chars !!
           </div>
@@ -120,6 +121,7 @@
 
 
 
+
             }}/{{ email.errors?.['minlength'].requiredLength }} chars !!
           </div>
           <div *ngIf="email.errors?.['pattern']">
@@ -151,6 +153,7 @@
           <div *ngIf="message.errors?.['minlength']">
             Ce champs doit avoir
             {{ message.errors?.['minlength'].actualLength
+
 
 
 

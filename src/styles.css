@@ -1,14 +1,15 @@
 /* Portfolio Version Created by Mohamed Machlou */
 /* Start Variables  */
 :root {
-  /* --main-color: #274696; */
   --main-color: #2a4fa7;
-  /* --main-color: #00d1ff; */
   --gray-color: #747373;
   --text-gray: #969494;
   --text-para-size: 16px;
   --text-para-weight: 400;
   --background-color: #e7e7e7;
+  /* Contrast Colors */
+  --main-back-color: black;
+  --text-gray-contrast: #969494;
 }
 /* End Variables  */
 /* Button Component */
@@ -210,7 +211,6 @@ body {
   }
 
   .nav {
-    background-color: #ffffff;
     height: 950px;
     width: 40px;
     top: 1px;

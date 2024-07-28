@@ -1,11 +1,21 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { AppearanceService } from '../../services/appearance.service';
 
 @Component({
   selector: 'about',
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  appearanceService = inject(AppearanceService);
+  switchClr = signal<boolean>(false);
+
+  //Switch Contrast Color
+  ngOnInit(): void {
+    this.switchClr.set(this.appearanceService.switchContrast());
+    console.log(this.switchClr());
+  }
+
   goTo(choose: String) {
     if (choose == 'fa') {
       window.open(
