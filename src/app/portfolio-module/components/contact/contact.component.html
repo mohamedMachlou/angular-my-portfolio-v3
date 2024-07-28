@@ -5,7 +5,7 @@
       <div class="info">
         <div class="img">
           <img
-            src="../../../../assets/images/Menu Icons Deactive/Home-m-Icon.svg"
+            src="../../../../assets/images/contact-infos-icons/home--menu--icon.svg"
             alt=""
           />
         </div>
@@ -25,7 +25,7 @@
       <div class="info">
         <div class="img">
           <img
-            src="../../../../assets/images/Menu Icons Deactive/Home-m-Icon.svg"
+            src="../../../../assets/images/contact-infos-icons/home--menu--icon.svg"
             alt=""
           />
         </div>
@@ -41,7 +41,7 @@
       <div class="info">
         <div class="img">
           <img
-            src="../../../../assets/images/Menu Icons Deactive/Home-m-Icon.svg"
+            src="../../../../assets/images/contact-infos-icons/home--menu--icon.svg"
             alt=""
           />
         </div>
@@ -82,6 +82,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }}/{{ fullname.errors?.['minlength'].requiredLength }} chars !!
           </div>
           <div *ngIf="fullname.errors?.['pattern']">
@@ -93,9 +110,9 @@
         <label for="">Your Email<span>*</span></label>
         <input
           required
-          minlength="4"
+          minlength="10"
           maxlength="70"
-          pattern="[a-zA-Z]+"
+          pattern="[a-zA-Z0-9_\.]+@[a-zA-Z]+\.[a-zA-Z]+"
           #email="ngModel"
           ngModel
           name="email"
@@ -103,7 +120,7 @@
           type="text"
         />
         <div class="alert-success" *ngIf="email.dirty && email.valid">
-          Données sont correctes
+          Valide email
         </div>
         <div class="alert-danger" *ngIf="email.touched && !email.valid">
           <div *ngIf="email.errors?.['required']">
@@ -115,10 +132,14 @@
 
 
 
+
+
+
+
             }}/{{ email.errors?.['minlength'].requiredLength }} chars !!
           </div>
           <div *ngIf="email.errors?.['pattern']">
-            Ce champs doit etre alpha !!
+            Ce champs doit etre exemple&#64;name.com
           </div>
         </div>
       </div>
@@ -129,7 +150,29 @@
       </div>
       <div class="form-group">
         <label for="">Your Message<span>*</span></label>
-        <textarea name="" id=""></textarea>
+        <textarea
+          required
+          minlength="10"
+          maxlength="250"
+          #message="ngModel"
+          ngModel
+          name="message"
+          (change)="validate(message)"
+          id=""
+        ></textarea>
+        <div class="alert-danger" *ngIf="message.touched && !message.valid">
+          <div *ngIf="message.errors?.['required']">
+            Ce champs est obligatoire !!
+          </div>
+          <div *ngIf="message.errors?.['minlength']">
+            Ce champs doit avoir
+            {{ message.errors?.['minlength'].actualLength
+
+
+
+            }}/{{ message.errors?.['minlength'].requiredLength }} chars !!
+          </div>
+        </div>
       </div>
       <button>SEND MESSAGE</button>
     </form>

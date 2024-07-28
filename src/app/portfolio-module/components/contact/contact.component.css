@@ -55,7 +55,8 @@
 form {
   /* width: 500px; */
   width: 60%;
-  height: 660px;
+  height: auto;
+  /* height: 660px; */
   padding: 40px 25px 25px;
   background-color: #ffffff;
   border-radius: 6px;
@@ -88,6 +89,7 @@ form .form-group input:focus {
 }
 form .form-group textarea {
   width: 100%;
+  min-height: 80px;
   height: 175px;
   background-color: #d7dde2;
   margin-bottom: 8px;
