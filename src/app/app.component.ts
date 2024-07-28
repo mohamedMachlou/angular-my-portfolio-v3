@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppearanceService } from './portfolio-module/services/appearance.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,5 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'angular-my-portfolio-v3';
 
-  ngOnInit(): void {
-    console.log(document);
-  }
+  ngOnInit(): void {}
 }

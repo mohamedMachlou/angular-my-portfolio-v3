@@ -7,14 +7,10 @@ import { AppearanceService } from '../../services/appearance.service';
   styleUrl: './about.component.css',
 })
 export class AboutComponent implements OnInit {
-  appearanceService = inject(AppearanceService);
-  switchClr = signal<boolean>(false);
+  switchClr = signal<boolean>(inject(AppearanceService).switchContrast());
 
   //Switch Contrast Color
-  ngOnInit(): void {
-    this.switchClr.set(this.appearanceService.switchContrast());
-    console.log(this.switchClr());
-  }
+  ngOnInit(): void {}
 
   goTo(choose: String) {
     if (choose == 'fa') {

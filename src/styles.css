@@ -9,6 +9,8 @@
   --background-color: #e7e7e7;
   /* Contrast Colors */
   --main-back-color: black;
+  --gray-back-color1: #9d9d9d;
+  --gray-back-color2: #171616;
   --text-gray-contrast: #969494;
 }
 /* End Variables  */
@@ -81,7 +83,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
-  background-color: var(--background-color);
+  background-color: white;
 }
 /* Start Media Queries */
 /* Small devices (Portrait phones, 576px and up) */
@@ -119,7 +121,7 @@ body {
 @media (min-width: 1200px) {
   .portfolio {
     width: 1200px;
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     /* background-color: #e5e5e5; */
   }
 }
@@ -134,7 +136,7 @@ body {
   margin-top: 0px;
 }
 .about {
-  background-color: #ffffff;
+  /* background-color: #000000; */
   height: 1400px;
   width: 330px;
   margin-bottom: 30px;
@@ -147,7 +149,7 @@ body {
   background-color: #000000;
 } */
 .nav {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   height: 650px;
   width: 60px;
   position: fixed;

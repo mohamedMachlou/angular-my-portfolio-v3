@@ -15,7 +15,6 @@
 .infos .image .img {
   width: 330px;
   height: 150px;
-  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +83,7 @@
 .infos .perso h3 {
   font-weight: 400;
   font-size: 16px;
-  color: black;
+  /* color: black; */
 }
 .infos .perso .available {
   color: #3fd807;

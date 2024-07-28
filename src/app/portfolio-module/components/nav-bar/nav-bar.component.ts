@@ -1,4 +1,4 @@
-import { Component, HostListener, inject, OnInit, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { AppearanceService } from '../../services/appearance.service';
 
 @Component({
@@ -22,6 +22,53 @@ export class NavBarComponent implements OnInit {
   switchColor() {
     this.appearanceService.toSwitchContrast();
     this.switchClr.set(this.appearanceService.switchContrast());
+
+    // Appearance Service
+    const body = document.querySelector('body');
+    const portfolio = document.querySelector('.portfolio');
+    const about = portfolio?.children[0];
+    const pers = document.querySelectorAll('.perso');
+    const perso = Array.from(pers);
+    const container = portfolio?.children[1];
+    const navbar = portfolio?.children[2]?.children[0]?.children[0];
+    const elemBack = [body, portfolio];
+    const elemFront = [about, container, navbar];
+    /// Get Elements div li  h2 h3 h4 h5 p
+    const divs = Array.from(document.querySelectorAll('div'));
+    const lists = Array.from(document.querySelectorAll('li'));
+    const header2 = Array.from(document.querySelectorAll('h2'));
+    const header4 = Array.from(document.querySelectorAll('h4'));
+    const gBW = [...divs, ...lists, ...header2, ...header4];
+    const header3 = Array.from(document.querySelectorAll('h3'));
+    const header5 = Array.from(document.querySelectorAll('h5'));
+    const paras = Array.from(document.querySelectorAll('p'));
+    const gGG = [...header5, ...paras];
+    console.log(gGG);
+
+    if (this.switchClr()) {
+      perso.map((ele) => {
+        ele?.setAttribute('style', 'color: white');
+      });
+      elemFront.map((ele) => {
+        ele?.setAttribute(
+          'style',
+          'background-color :var(--main-back-color);color:white'
+        );
+      });
+    } else {
+      perso.map((ele) => {
+        ele?.setAttribute('style', 'color: black');
+      });
+      elemBack.map((ele) => {
+        ele?.setAttribute(
+          'style',
+          'background-color : var(--gray-back-color1)'
+        );
+      });
+      elemFront.map((ele) => {
+        ele?.setAttribute('style', 'background-color :  white');
+      });
+    }
   }
 
   ngOnInit(): void {}
