@@ -10,7 +10,7 @@
   /* Contrast Colors */
   --front-color-Befor: #ffffff;
   --front-color-After: black;
-  --gray-back-colorB: #ffffff;
+  --gray-back-colorB: #b9b8b8;
   --gray-back-colorA: #1e1e1e;
   --text-gray-contrastA: #969494;
 }
@@ -84,7 +84,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
-  background-color: white;
+  background-color: var(--gray-back-colorB);
 }
 /* Start Media Queries */
 /* Small devices (Portrait phones, 576px and up) */

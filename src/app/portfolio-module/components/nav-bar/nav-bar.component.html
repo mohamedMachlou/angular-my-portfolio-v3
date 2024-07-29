@@ -19,7 +19,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.isActive() == 'home' ? 'isActiveClass' : 'isDeactiveClass'
+        this.selected() == 'home' ? 'selectedClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -38,7 +38,7 @@
       routerLink="['/service']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.isActive() == 'service' ? 'isActiveClass' : 'isDeactiveClass'
+        this.selected() == 'service' ? 'selectedClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -57,7 +57,7 @@
       routerLink="['/education']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.isActive() == 'education' ? 'isActiveClass' : 'isDeactiveClass'
+        this.selected() == 'education' ? 'selectedClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -76,7 +76,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.isActive() == 'portfolio' ? 'isActiveClass' : 'isDeactiveClass'
+        this.selected() == 'portfolio' ? 'selectedClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -95,7 +95,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.isActive() == 'blog' ? 'isActiveClass' : 'isDeactiveClass'
+        this.selected() == 'blog' ? 'selectedClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -114,7 +114,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.isActive() == 'contact' ? 'isActiveClass' : 'isDeactiveClass'
+        this.selected() == 'contact' ? 'selectedClass' : 'isDeactiveClass'
       ]"
     >
       <img
