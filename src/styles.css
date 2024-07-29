@@ -8,9 +8,10 @@
   --text-para-weight: 400;
   --background-color: #e7e7e7;
   /* Contrast Colors */
-  --main-back-color: black;
+  --front-color-Befor: #ffffff;
+  --front-color-After: black;
   --gray-back-colorB: #ffffff;
-  --gray-back-colorA: #171616;
+  --gray-back-colorA: #1e1e1e;
   --text-gray-contrastA: #969494;
 }
 /* End Variables  */

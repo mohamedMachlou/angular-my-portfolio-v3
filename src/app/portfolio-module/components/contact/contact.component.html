@@ -1,8 +1,8 @@
 <!-- Portfolio Version Created by Mohamed Machlou  -->
-<div class="container section" id="contact">
-  <div class="contact" id="contact">
+<div class="container section">
+  <div class="contact">
     <div class="infos">
-      <div class="info">
+      <div class="info" id="contact">
         <div class="img">
           <img
             src="../../../../assets/images/contact-infos-icons/home--menu--icon.svg"
@@ -22,7 +22,7 @@
           <h5>15, Résidence Yasmine, Founty</h5>
         </div>
       </div>
-      <div class="info">
+      <div class="info" id="contact">
         <div class="img">
           <img
             src="../../../../assets/images/contact-infos-icons/home--menu--icon.svg"
@@ -38,7 +38,7 @@
           <h5>&#64;machloumed</h5>
         </div>
       </div>
-      <div class="info">
+      <div class="info" id="contact">
         <div class="img">
           <img
             src="../../../../assets/images/contact-infos-icons/home--menu--icon.svg"
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <form #f="ngForm" (ngSubmit)="showForm(f)">
+    <form #f="ngForm" (ngSubmit)="showForm(f)" id="contact">
       <div class="form-group">
         <label for="">Your Full Name <span>*</span></label>
         <input
@@ -79,6 +79,8 @@
           <div *ngIf="fullname.errors?.['minlength']">
             Ce champs doit avoir
             {{ fullname.errors?.['minlength'].actualLength
+
+
 
 
             }}/{{ fullname.errors?.['minlength'].requiredLength }} chars !!
@@ -122,6 +124,8 @@
 
 
 
+
+
             }}/{{ email.errors?.['minlength'].requiredLength }} chars !!
           </div>
           <div *ngIf="email.errors?.['pattern']">
@@ -153,6 +157,8 @@
           <div *ngIf="message.errors?.['minlength']">
             Ce champs doit avoir
             {{ message.errors?.['minlength'].actualLength
+
+
 
 
 
