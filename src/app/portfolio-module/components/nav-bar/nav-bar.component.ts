@@ -27,46 +27,60 @@ export class NavBarComponent implements OnInit {
     const body = document.querySelector('body');
     const portfolio = document.querySelector('.portfolio');
     const about = portfolio?.children[0];
-    const pers = document.querySelectorAll('.perso');
-    const perso = Array.from(pers);
+    // const pers = document.querySelectorAll('.perso');
+    // const perso = Array.from(pers);
     const container = portfolio?.children[1];
     const navbar = portfolio?.children[2]?.children[0]?.children[0];
     const elemBack = [body, portfolio];
     const elemFront = [about, container, navbar];
-    /// Get Elements div li  h2 h3 h4 h5 p
+    /// Get Elements div li  h2  h4 -- To switch color Black/white
     const divs = Array.from(document.querySelectorAll('div'));
     const lists = Array.from(document.querySelectorAll('li'));
     const header2 = Array.from(document.querySelectorAll('h2'));
     const header4 = Array.from(document.querySelectorAll('h4'));
-    const gBW = [...divs, ...lists, ...header2, ...header4];
+    const gBW = [...lists, ...header2, ...header4];
+
+    /// Get Elements h3 -- To Main Color
     const header3 = Array.from(document.querySelectorAll('h3'));
+
+    /// Get Elements h5 p -- To switch color Gray/Gray
     const header5 = Array.from(document.querySelectorAll('h5'));
     const paras = Array.from(document.querySelectorAll('p'));
     const gGG = [...header5, ...paras];
+
     console.log(gGG);
 
     if (this.switchClr()) {
-      perso.map((ele) => {
+      gBW.map((ele) => {
         ele?.setAttribute('style', 'color: white');
       });
-      elemFront.map((ele) => {
-        ele?.setAttribute(
-          'style',
-          'background-color :var(--main-back-color);color:white'
-        );
+      gGG.map((ele) => {
+        ele?.setAttribute('style', 'color: var(--text-gray-contrastA)');
       });
-    } else {
-      perso.map((ele) => {
-        ele?.setAttribute('style', 'color: black');
+      elemFront.map((ele) => {
+        ele?.setAttribute('style', 'background-color :var(--main-back-color)');
       });
       elemBack.map((ele) => {
         ele?.setAttribute(
           'style',
-          'background-color : var(--gray-back-color1)'
+          'background-color : var(--gray-back-colorA)'
         );
+      });
+    } else {
+      gBW.map((ele) => {
+        ele?.setAttribute('style', 'color: black');
+      });
+      gGG.map((ele) => {
+        ele?.setAttribute('style', 'color: Black');
       });
       elemFront.map((ele) => {
         ele?.setAttribute('style', 'background-color :  white');
+      });
+      elemBack.map((ele) => {
+        ele?.setAttribute(
+          'style',
+          'background-color : var(--gray-back-colorB)'
+        );
       });
     }
   }

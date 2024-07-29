@@ -9,9 +9,9 @@
   --background-color: #e7e7e7;
   /* Contrast Colors */
   --main-back-color: black;
-  --gray-back-color1: #9d9d9d;
-  --gray-back-color2: #171616;
-  --text-gray-contrast: #969494;
+  --gray-back-colorB: #ffffff;
+  --gray-back-colorA: #171616;
+  --text-gray-contrastA: #969494;
 }
 /* End Variables  */
 /* Button Component */

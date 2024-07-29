@@ -80,7 +80,7 @@
   height: 46px;
   margin: 0px auto;
 }
-.infos .perso h3 {
+.infos .perso h5 {
   font-weight: 400;
   font-size: 16px;
   /* color: black; */
@@ -113,7 +113,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.infos .image .side-bar .indicators h3 {
+.infos .image .side-bar .indicators h5 {
   font-weight: 300;
   font-size: 15px;
 }
@@ -173,7 +173,7 @@
     width: 40%;
   }
   .infos .perso {
-    width: 60%;
+    width: 80%;
   }
   .infos .image .title {
     width: 80%;
