@@ -23,10 +23,6 @@ export class NavBarComponent implements OnInit {
     this.appearanceService.toSwitchContrast();
     this.switchClr.set(this.appearanceService.switchContrast());
 
-    // Appearance Service
-    // const pers = document.querySelectorAll('.perso');
-    // const perso = Array.from(pers);
-
     /// Get Elements Back Body and Portfolio -- To switch color
     const body = document.querySelector('body');
     const portfolio = document.querySelector('.portfolio');
@@ -41,6 +37,10 @@ export class NavBarComponent implements OnInit {
     const navbar = Array.from(document.querySelectorAll('#navbar'));
     const myportfolio = Array.from(document.querySelectorAll('#myportfolio'));
     const price = Array.from(document.querySelectorAll('#price'));
+    const priceHeader = Array.from(document.querySelectorAll('#price-header'));
+    const disableServices = Array.from(
+      document.querySelectorAll('.service-disable')
+    );
     const recommendation = Array.from(
       document.querySelectorAll('#recommendation')
     );
@@ -60,7 +60,6 @@ export class NavBarComponent implements OnInit {
       ...welcome,
       ...footer,
     ];
-    console.log(frontElem);
     // const navbar = portfolio?.children[2]?.children[0]?.children[0];
     // const about = portfolio?.children[0];
     // const elemFront = [about, navbar];
@@ -83,6 +82,8 @@ export class NavBarComponent implements OnInit {
     const paras = Array.from(document.querySelectorAll('p'));
     const gGG = [...header5, ...paras];
 
+    console.log(disableServices);
+
     if (this.switchClr()) {
       // Switch to White color for Elements  li  h2  h4
       gBW.map((ele) => {
@@ -102,6 +103,11 @@ export class NavBarComponent implements OnInit {
         );
       });
 
+      // Add black color to price header
+      priceHeader.map((ele) => {
+        ele?.setAttribute('style', 'color : black');
+      });
+
       // Switch to Black color for Container Childrens
 
       // Switch to Gray color for body and portfolio◘
@@ -110,6 +116,11 @@ export class NavBarComponent implements OnInit {
           'style',
           'background-color : var(--gray-back-colorA)'
         );
+      });
+
+      // Add Gray color to Disable Services at Prices Plan
+      disableServices.map((ele) => {
+        ele?.setAttribute('style', 'color : var(--text-gray-contrastA)');
       });
     } else {
       // Switch to Black color for Elements  li  h2  h4
@@ -142,10 +153,17 @@ export class NavBarComponent implements OnInit {
           'background-color : var(--gray-back-colorB)'
         );
       });
+
+      // Add Gray color to Disable Services at Prices Plan
+      disableServices.map((ele) => {
+        ele?.setAttribute('style', 'color : var(--text-gray-contrastA)');
+      });
     }
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.switchColor();
+  }
 }
 /////////////////////////////////////////////////////////
 ///////////// Start Scrolling Function //////////////////
