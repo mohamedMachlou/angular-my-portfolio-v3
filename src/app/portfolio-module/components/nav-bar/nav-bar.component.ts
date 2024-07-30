@@ -10,6 +10,8 @@ import { SwitchColorService } from '../../services/switch-color.service';
 })
 export class NavBarComponent implements OnInit {
   selected = signal<String>('home');
+  // Switch Color status
+  switchClr = signal<boolean>(false);
 
   // Injection Services
   switchColorService = inject(SwitchColorService);
@@ -22,6 +24,7 @@ export class NavBarComponent implements OnInit {
 
   switchColor() {
     this.switchColorService.switchColorMethod();
+    this.switchClr.set(this.switchColorService.switchClr());
     this.manageListsService.manageListById(0);
   }
 

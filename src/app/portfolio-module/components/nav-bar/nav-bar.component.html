@@ -8,6 +8,12 @@
       routerLinkActive="router-link-active"
     >
       <img
+        *ngIf="this.switchClr()"
+        src="../../../../assets/images/Menu Icons Active/Contrast-icon-sun.svg"
+        alt=""
+      />
+      <img
+        *ngIf="!this.switchClr()"
         src="../../../../assets/images/Menu Icons Deactive/Contrast-m-Icon.svg"
         alt=""
       />
