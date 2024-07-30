@@ -9,6 +9,5 @@ export class AppearanceService {
 
   toSwitchContrast() {
     this.switchContrast.set(!this.switchContrast());
-    console.log(this.switchContrast());
   }
 }

@@ -1,3 +1,4 @@
+import { ManageListsService } from './../../services/manage-lists.service';
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { ScrollingService } from '../../services/scrolling.service';
 import { SwitchColorService } from '../../services/switch-color.service';
@@ -12,6 +13,7 @@ export class NavBarComponent implements OnInit {
 
   // Injection Services
   switchColorService = inject(SwitchColorService);
+  manageListsService = inject(ManageListsService);
 
   goToSection(name: string) {
     document.getElementById(name)?.scrollIntoView();
@@ -20,6 +22,7 @@ export class NavBarComponent implements OnInit {
 
   switchColor() {
     this.switchColorService.switchColorMethod();
+    this.manageListsService.manageListById(0);
   }
 
   ngOnInit(): void {}

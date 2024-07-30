@@ -1,4 +1,6 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { ManageListsService } from './../../services/manage-lists.service';
+import { SwitchColorService } from './../../services/switch-color.service';
+import { Component, inject, OnInit, signal } from '@angular/core';
 
 @Component({
   selector: 'portfolioComp',
@@ -6,9 +8,12 @@ import { Component, OnInit, signal } from '@angular/core';
   styleUrl: './portfolioComp.component.css',
 })
 export class PortfolioComponent implements OnInit {
-  toStyle = signal<String>('all');
-  switchTo(name: string) {
-    this.toStyle.set(name);
+  // Injections Services
+  manageListsService = inject(ManageListsService);
+
+  // set current ID  method
+  setId(id: number) {
+    this.manageListsService.manageListById(id);
   }
 
   // Design Images :
@@ -63,22 +68,24 @@ export class PortfolioComponent implements OnInit {
       ...this.logo_img,
     ];
   }
-  //show Design Images
-  show_design_img() {
-    this.showImg = [...this.design_img];
-  }
-  //show Web Templates Images
-  show_web_tem_img() {
-    this.showImg = [...this.web_templates_img];
-  }
-  //show  Web Apps Images
-  show_web_apps_img() {
-    this.showImg = [...this.web_apps_img];
-  }
-  //show Logo Images
-  show_logo_img() {
-    this.showImg = [...this.logo_img];
-  }
+  // //show Design Images
+  // show_design_img() {
+  //   this.showImg = [...this.design_img];
+  // }
+  // //show Web Templates Images
+  // show_web_tem_img() {
+  //   this.showImg = [...this.web_templates_img];
+  // }
+  // //show  Web Apps Images
+  // show_web_apps_img() {
+  //   this.showImg = [...this.web_apps_img];
+  // }
+  // //show Logo Images
+  // show_logo_img() {
+  //   this.showImg = [...this.logo_img];
+  // }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.setId(0);
+  }
 }
