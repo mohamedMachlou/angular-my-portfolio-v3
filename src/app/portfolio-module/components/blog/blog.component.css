@@ -23,12 +23,14 @@
   display: block;
 }
 .container .blogs .blog h4,
+.container .blogs .blog h3,
 .container .blogs .blog p {
   padding-left: 15px;
   padding-right: 15px;
 }
-.container .blogs .blog h4:last-child {
+.container .blogs .blog h3 {
   color: var(--main-color);
+  cursor: pointer;
 }
 /* Large devices (desktops, 1200px and down) */
 @media (max-width: 1200px) {

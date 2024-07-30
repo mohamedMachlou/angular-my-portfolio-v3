@@ -22,7 +22,6 @@ export class PortfolioComponent implements OnInit {
   getImages() {
     this.showPotfolioImgService.showImages();
     this.imgToShow = this.showPotfolioImgService.showImgfromService;
-    console.log(this.showPotfolioImgService.showImgfromService);
   }
 
   // //show Design Images
