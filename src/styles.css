@@ -10,7 +10,7 @@
   /* Contrast Colors */
   --front-color-Befor: #ffffff;
   --front-color-After: black;
-  --gray-back-colorB: #b9b8b8;
+  --gray-back-colorB: #d4d4d4;
   --gray-back-colorA: #1e1e1e;
   --text-gray-contrastA: #969494;
 }
@@ -137,7 +137,7 @@ body {
   margin-top: 0px;
 }
 .about {
-  /* background-color: #000000; */
+  background-color: var(--front-color-Befor);
   height: 1400px;
   width: 330px;
   margin-bottom: 30px;
@@ -150,7 +150,7 @@ body {
   background-color: #000000;
 } */
 .nav {
-  /* background-color: #ffffff; */
+  background-color: var(--front-color-Befor);
   height: 650px;
   width: 60px;
   position: fixed;

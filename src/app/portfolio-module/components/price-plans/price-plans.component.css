@@ -9,7 +9,7 @@
   /* background-color: #ececec; */
 }
 .container .prices .price {
-  /* background-color: #ffffff; */
+  background-color: var(--front-color-Befor);
   width: 32%;
   /* width: 270px; */
   height: 620px;
