@@ -59,17 +59,21 @@ export class SwitchColorService implements OnInit {
     // Get Container's children
     const containerChldrs = Array.from(portfolio?.children[1].children!);
 
-    /// Get Elements  li  h2  h4 -- To switch color Black/white
+    /// Get Elements  li  h2  h4 h6 -- To switch color Black/white
     // const divs = Array.from(document.querySelectorAll('div'));
     const header2 = Array.from(document.querySelectorAll('h2'));
     const header4 = Array.from(document.querySelectorAll('h4'));
-    const gBW = [...header2, ...header4];
+    const header6 = Array.from(document.querySelectorAll('h6'));
+    const gBW = [...header2, ...header4, ...header6];
     /// Get Elements h3 -- To Main Color
     const header3 = Array.from(document.querySelectorAll('h3'));
     /// Get Elements h5 p -- To switch color Gray/Gray
     const header5 = Array.from(document.querySelectorAll('h5'));
     const paras = Array.from(document.querySelectorAll('p'));
     const gGG = [...header5, ...paras];
+
+    const available = document.querySelector('#available');
+    available?.setAttribute('style', 'color: #3fd807');
 
     // Get Switch color status true/falsefrom Appearance Service
     this.appearanceService.toSwitchContrast();
@@ -82,7 +86,7 @@ export class SwitchColorService implements OnInit {
       /////////// Switch Color : True //////////////
       //////////////////////////////////////////////
 
-      // Switch to White color for Elements   h2  h4
+      // Switch to White color for Elements   h2  h4 h6
       gBW.map((ele) => {
         ele?.setAttribute('style', 'color: white');
       });
@@ -126,7 +130,7 @@ export class SwitchColorService implements OnInit {
       /////////// Switch Color : False /////////////
       //////////////////////////////////////////////
 
-      // Switch to Black color for Elements   h2  h4
+      // Switch to Black color for Elements   h2  h4 h6
       gBW.map((ele) => {
         ele?.setAttribute('style', 'color: black');
       });
