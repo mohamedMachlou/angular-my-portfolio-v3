@@ -1,5 +1,5 @@
+import { ShowPotfolioImgService } from './../../services/show-potfolio-img.service';
 import { ManageListsService } from './../../services/manage-lists.service';
-import { SwitchColorService } from './../../services/switch-color.service';
 import { Component, inject, OnInit, signal } from '@angular/core';
 
 @Component({
@@ -8,66 +8,23 @@ import { Component, inject, OnInit, signal } from '@angular/core';
   styleUrl: './portfolioComp.component.css',
 })
 export class PortfolioComponent implements OnInit {
+  imgToShow: any[] = [];
   // Injections Services
   manageListsService = inject(ManageListsService);
+  showPotfolioImgService = inject(ShowPotfolioImgService);
 
   // set current ID  method
   setId(id: number) {
     this.manageListsService.manageListById(id);
   }
 
-  // Design Images :
-  design_img = [
-    '../../../../assets/images/Portfolio__Images/design_images/design__1.svg',
-    '../../../../assets/images/Portfolio__Images/design_images/design__2.svg',
-    '../../../../assets/images/Portfolio__Images/design_images/design__3.svg',
-    '../../../../assets/images/Portfolio__Images/design_images/design__4.svg',
-    '../../../../assets/images/Portfolio__Images/design_images/design__5.svg',
-  ];
-
-  // Web Templates Images :
-  web_templates_img = [
-    '../../../../assets/images/Portfolio__Images/website_images/website__1.svg',
-    '../../../../assets/images/Portfolio__Images/website_images/website__2.svg',
-    '../../../../assets/images/Portfolio__Images/website_images/website__3.svg',
-    '../../../../assets/images/Portfolio__Images/website_images/website__4.svg',
-  ];
-
-  // Web Apps Images :
-  web_apps_img = [
-    '../../../../assets/images/Portfolio__Images/web_images/web_app__1.svg',
-    '../../../../assets/images/Portfolio__Images/web_images/web_app__2.svg',
-    '../../../../assets/images/Portfolio__Images/web_images/web_app__3.svg',
-    '../../../../assets/images/Portfolio__Images/web_images/web_app__4.svg',
-    '../../../../assets/images/Portfolio__Images/web_images/web_app__5.svg',
-    '../../../../assets/images/Portfolio__Images/web_images/web_app__6.svg',
-  ];
-
-  // Logo Images :
-  logo_img = [
-    '../../../../assets/images/Portfolio__Images/logo_images/logo___1.svg',
-    '../../../../assets/images/Portfolio__Images/logo_images/logo___2.svg',
-    '../../../../assets/images/Portfolio__Images/logo_images/logo___3.svg',
-    '../../../../assets/images/Portfolio__Images/logo_images/logo___4.svg',
-    '../../../../assets/images/Portfolio__Images/logo_images/logo___5.svg',
-  ];
-
-  //show All Images Array
-  showImg: String[] = [
-    ...this.web_templates_img,
-    ...this.design_img,
-    ...this.web_apps_img,
-    ...this.logo_img,
-  ];
-  //show All Images Method
-  show_all() {
-    this.showImg = [
-      ...this.web_templates_img,
-      ...this.design_img,
-      ...this.web_apps_img,
-      ...this.logo_img,
-    ];
+  /// Get Images To show
+  getImages() {
+    this.showPotfolioImgService.showImages();
+    this.imgToShow = this.showPotfolioImgService.showImgfromService;
+    console.log(this.showPotfolioImgService.showImgfromService);
   }
+
   // //show Design Images
   // show_design_img() {
   //   this.showImg = [...this.design_img];
@@ -87,5 +44,6 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     this.setId(0);
+    this.getImages();
   }
 }

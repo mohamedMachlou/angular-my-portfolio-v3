@@ -11,14 +11,14 @@
   </div>
   <div class="portfolio" id="myportfolio">
     <ul>
-      <li (click)="setId(0)">All Categories</li>
-      <li (click)="setId(1)">UI Design</li>
-      <li (click)="setId(2)">Web Template</li>
-      <li (click)="setId(3)">Web Apps</li>
-      <li (click)="setId(4)">Logo</li>
+      <li (click)="setId(0); getImages()">All Categories</li>
+      <li (click)="setId(1); getImages()">UI Design</li>
+      <li (click)="setId(2); getImages()">Web Template</li>
+      <li (click)="setId(3); getImages()">Web Apps</li>
+      <li (click)="setId(4); getImages()">Logo</li>
     </ul>
     <div class="portfolio_img">
-      <div class="show-img" *ngFor="let source of showImg">
+      <div class="show-img" *ngFor="let source of imgToShow">
         <img [src]="source" alt="" />
       </div>
     </div>
