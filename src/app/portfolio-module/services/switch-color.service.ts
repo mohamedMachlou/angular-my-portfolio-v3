@@ -52,15 +52,8 @@ export class SwitchColorService implements OnInit {
       ...welcome,
       ...footer,
     ];
-    // const navbar = portfolio?.children[2]?.children[0]?.children[0];
-    // const about = portfolio?.children[0];
-    // const elemFront = [about, navbar];
-
-    // Get Container's children
-    const containerChldrs = Array.from(portfolio?.children[1].children!);
 
     /// Get Elements  li  h2  h4 h6 -- To switch color Black/white
-    // const divs = Array.from(document.querySelectorAll('div'));
     const header2 = Array.from(document.querySelectorAll('h2'));
     const header4 = Array.from(document.querySelectorAll('h4'));
     const header6 = Array.from(document.querySelectorAll('h6'));
@@ -72,14 +65,12 @@ export class SwitchColorService implements OnInit {
     const paras = Array.from(document.querySelectorAll('p'));
     const gGG = [...header5, ...paras];
 
-    const available = document.querySelector('#available');
-    available?.setAttribute('style', 'color: #3fd807');
+    // Set Color to Text Available on About Component
+    const available = document.querySelector('.available');
 
     // Get Switch color status true/falsefrom Appearance Service
     this.appearanceService.toSwitchContrast();
     this.switchClr.set(this.appearanceService.switchContrast());
-
-    console.log(' from switch color : ', this.switchClr());
 
     if (this.switchClr()) {
       //////////////////////////////////////////////
@@ -88,15 +79,15 @@ export class SwitchColorService implements OnInit {
 
       // Switch to White color for Elements   h2  h4 h6
       gBW.map((ele) => {
-        ele?.setAttribute('style', 'color: white');
+        ele?.setAttribute('style', 'color: var(--txt-h2h4h6-after)');
       });
 
       // Switch to Gray color for Elements  h5 p
       gGG.map((ele) => {
-        ele?.setAttribute('style', 'color: var(--text-gray-contrastA)');
+        ele?.setAttribute('style', 'color: var(--txt-h5p-after)');
       });
 
-      // Switch to Black color All FrontElem
+      // Switch to Black color All Front Elements
       frontElem.map((ele) => {
         ele?.setAttribute(
           'style',
@@ -104,27 +95,25 @@ export class SwitchColorService implements OnInit {
         );
       });
 
-      // Add black color to price header
+      // Add color to price header
       priceHeader.map((ele) => {
-        ele?.setAttribute('style', 'color : black');
+        ele?.setAttribute('style', 'color : var(--front-color-After)');
       });
 
-      // Switch to Black color for Container Childrens
-      // this.frontElem.map((ele) => {
-      //   ele?.setAttribute('style', 'background-color :var(--front-color-After)');
-      // });
-      // Switch to Gray color for body and portfolio
+      // Switch color After to Back Elements : body and portfolio
       back.map((ele) => {
         ele?.setAttribute(
           'style',
-          'background-color : var(--gray-back-colorA)'
+          'background-color : var(--back-color-After)'
         );
       });
 
-      // Add Gray color to Disable Services at Prices Plan
+      // Add color to Disable Services at Prices Plan
       disableServices.map((ele) => {
-        ele?.setAttribute('style', 'color : var(--text-gray-contrastA)');
+        ele?.setAttribute('style', 'color : var(--txt-deactive-after)');
       });
+      //
+      //
     } else {
       //////////////////////////////////////////////
       /////////// Switch Color : False /////////////
@@ -132,12 +121,12 @@ export class SwitchColorService implements OnInit {
 
       // Switch to Black color for Elements   h2  h4 h6
       gBW.map((ele) => {
-        ele?.setAttribute('style', 'color: black');
+        ele?.setAttribute('style', 'color: var(--txt-h2h4h6-befor)');
       });
 
       // Switch to Gray color for Elements  h5 p
       gGG.map((ele) => {
-        ele?.setAttribute('style', 'color: Black');
+        ele?.setAttribute('style', 'color: var(--txt-h5p-befor)');
       });
 
       // Switch to White color All Front Elements
@@ -148,24 +137,26 @@ export class SwitchColorService implements OnInit {
         );
       });
 
-      // // Switch to White color for Container Childrens
-      // this.containerChldrs.map((ele) => {
-      //   ele?.setAttribute('style', 'background-color : var(--front-color-Befor)');
-      // });
+      // Add color to price header
+      priceHeader.map((ele) => {
+        ele?.setAttribute('style', 'color : var(--front-color-Befor)');
+      });
 
-      // Switch to Gray color for body and portfolio
+      // Switch color After to Back Elements : body and portfolio
       back.map((ele) => {
         ele?.setAttribute(
           'style',
-          'background-color : var(--gray-back-colorB)'
+          'background-color : var(--back-color-befor)'
         );
       });
 
-      // Add Gray color to Disable Services at Prices Plan
+      // Add color to Disable Services at Prices Plan
       disableServices.map((ele) => {
-        ele?.setAttribute('style', 'color : var(--text-gray-contrastA)');
+        ele?.setAttribute('style', 'color : var(--txt-deactive-befor)');
       });
     }
+    // Set Color to Text Available on About Component
+    available?.setAttribute('style', 'color: var(--available-color)');
   }
 
   ngOnInit(): void {}

@@ -7,12 +7,26 @@
   --text-para-size: 16px;
   --text-para-weight: 400;
   --background-color: #e7e7e7;
+
+  --txt-button: #ffffff;
+
   /* Contrast Colors */
   --front-color-Befor: #ffffff;
   --front-color-After: black;
-  --gray-back-colorB: #d4d4d4;
-  --gray-back-colorA: #1e1e1e;
-  --text-gray-contrastA: #969494;
+
+  --back-color-After: #1e1e1e;
+  --back-color-befor: #d4d4d4;
+
+  --available-color: #3fd807;
+
+  --txt-h2h4h6-befor: #000000;
+  --txt-h2h4h6-after: #ffffff;
+
+  --txt-h5p-befor: #565454;
+  --txt-h5p-after: #969494;
+
+  --txt-deactive-befor: #565454;
+  --txt-deactive-after: #565454;
 }
 /* End Variables  */
 /* Button Component */
@@ -24,7 +38,7 @@ button {
   font-weight: 500;
   font-size: 18px;
   background-color: var(--main-color);
-  color: #ffffff;
+  color: var(--txt-button);
   cursor: pointer;
 }
 /* Start Section Heading Component */
@@ -54,7 +68,7 @@ button {
 .section-heading .heading-block p {
   font-weight: 400;
   font-size: 15px;
-  color: var(--gray-color);
+  color: var(--txt-h5p-befor);
 }
 /* Small devices (landscape phones, 400px and up) */
 @media (max-width: 400px) {
@@ -84,7 +98,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   caret-color: transparent;
-  background-color: var(--gray-back-colorB);
+  background-color: var(--back-color-befor);
 }
 /* Start Media Queries */
 /* Small devices (Portrait phones, 576px and up) */

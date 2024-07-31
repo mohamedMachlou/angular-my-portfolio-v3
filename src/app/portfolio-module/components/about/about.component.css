@@ -87,7 +87,7 @@
   /* color: black; */
 }
 .infos .perso .available {
-  color: #3fd807;
+  color: var(--available-color);
 }
 .infos .image .title {
   width: 90%;
