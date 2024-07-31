@@ -1,4 +1,8 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 .infos {
   display: flex;
   justify-content: center;
@@ -24,22 +28,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* .infos .image .img img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  position: relative;
-} */
-/* .infos .image .img:after {
-  content: "";
-  background-color: #4eff10;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  position: absolute;
-  top: 100px;
-  left: 196px;
-} */
 .infos .image h2 {
   font-weight: 600;
   font-size: 25px;
@@ -49,7 +37,7 @@
 .infos .image h3 {
   font-weight: 500;
   font-size: 20px;
-  color: #959292;
+  color: var(--txt-deactive-befor);
 }
 .infos .image .social-media {
   width: 70%;
@@ -70,7 +58,7 @@
 .infos .line {
   width: 80%;
   height: 1px;
-  background-color: #959292;
+  background-color: var(--line-color-befor);
   margin: 20px 0px;
 }
 .infos .perso {
@@ -84,7 +72,6 @@
 .infos .perso h5 {
   font-weight: 400;
   font-size: 16px;
-  /* color: black; */
 }
 .infos .perso .available {
   color: var(--available-color);

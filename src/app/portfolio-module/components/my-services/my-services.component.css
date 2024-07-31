@@ -1,4 +1,8 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 .container .my-services {
   width: 100%;
   display: flex;
@@ -16,7 +20,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color: var(--front-color-Befor);
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -24,7 +28,6 @@
 .container .my-services .service img {
   width: 80px;
   margin: 10px 5px 30px;
-  fill: #0d1be7;
 }
 .container .my-services .service h3 {
   font-weight: 600;
@@ -34,7 +37,7 @@
 .container .my-services .service p {
   font-weight: 500;
   font-size: 15px;
-  color: #868684;
+  color: var(--txt-h5p-befor);
 }
 /* Large devices (desktops, 1200px and down) */
 @media (max-width: 1200px) {

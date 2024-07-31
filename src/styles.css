@@ -1,13 +1,18 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 /* Start Variables  */
 :root {
   --main-color: #2a4fa7;
+
   --gray-color: #747373;
-  --text-gray: #969494;
   --text-para-size: 16px;
   --text-para-weight: 400;
   --background-color: #e7e7e7;
 
+  --btn-color-diasble: #728ecf;
   --txt-button: #ffffff;
 
   /* Contrast Colors */
@@ -27,6 +32,17 @@
 
   --txt-deactive-befor: #565454;
   --txt-deactive-after: #565454;
+
+  --service-enable: #000000;
+  --service-disable: #9b9999;
+
+  --menu-icon-color-deactive: #dadad7;
+
+  --line-color-befor: #959292;
+
+  --input-color-befor: #dfe8be;
+
+  --label-color-befor: #969494;
 }
 /* End Variables  */
 /* Button Component */

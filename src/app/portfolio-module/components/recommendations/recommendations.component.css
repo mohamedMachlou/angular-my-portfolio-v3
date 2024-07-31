@@ -1,7 +1,10 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 .recommendations {
   width: 100%;
-  /* background-color: yellow; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -10,7 +13,7 @@
 .recommendations .block {
   width: 32%;
   padding: 20px 0px 7px;
-  background-color: #ffffff;
+  background-color: var(--front-color-Befor);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,7 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #93f6d5; */
 }
 .recommendations .block .etoile img {
   width: 20px;
@@ -31,14 +33,13 @@
 }
 .recommendations .block .body {
   width: 100%;
-  /* margin-bottom: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 .recommendations .block .body p {
-  color: var(--text-gray-contrastA);
+  color: var(--txt-h5p-befor);
 }
 .recommendations .block .img {
   width: 100%;
@@ -51,7 +52,7 @@
   font-size: 12px;
 }
 .recommendations .block .img h4 {
-  color: black;
+  color: var(--txt-h2h4h6-befor);
 }
 .recommendations .block .img img {
   width: 70px;

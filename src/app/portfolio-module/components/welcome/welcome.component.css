@@ -1,9 +1,13 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 .container .welcome {
   width: 98%;
   margin-left: 1%;
   margin-right: 1%;
-  background-color: #ffffff;
+  background-color: var(--front-color-Befor);
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -13,12 +17,9 @@
 .container .welcome .block {
   width: 60%;
   padding: 15px;
-  /* background-color: #f12a2a; */
   border-radius: 8px;
   position: relative;
-  /* background-color: antiquewhite; */
   display: flex;
-  /* justify-content: space-evenly; */
   align-items: flex-start;
   flex-direction: column;
 }
@@ -32,7 +33,7 @@
 .container .welcome .block p {
   font-weight: 400;
   font-size: 15px;
-  color: rgb(133, 133, 132);
+  color: var(--txt-h5p-befor);
 }
 .container .welcome .block button {
   margin-top: 20px;

@@ -1,4 +1,8 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 .container .education {
   width: 100%;
   margin: 0px auto;
@@ -39,7 +43,7 @@
   align-items: center;
 }
 .container .education span {
-  background-color: var(--text-gray);
+  background-color: var(--txt-h5p-befor);
   height: 1px;
   width: 100%;
   margin: 10px 0px;

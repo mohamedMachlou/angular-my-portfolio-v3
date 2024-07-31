@@ -1,4 +1,8 @@
-/* Portfolio Version Created by Mohamed Machlou */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
+/* ////// Portfolio Version 3 Created by Mohamed Machlou ///// */
+/* /////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////// */
 .container .prices {
   /* background-color: yellow; */
   width: 100%;
@@ -6,7 +10,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  /* background-color: #ececec; */
 }
 .container .prices .price {
   background-color: var(--front-color-Befor);
@@ -48,7 +51,6 @@
 }
 .container .prices .price .body {
   margin-top: 30px;
-  /* background-color: #ffffff; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -70,7 +72,7 @@
 .container .prices .price .body p {
   font-weight: --text-para-weight;
   font-size: var(--text-para-size);
-  color: var(--text-gray);
+  color: var(--txt-h5p-befor);
   padding: 0px 6px;
 }
 .container .prices .price .services {
@@ -83,7 +85,6 @@
   align-items: center;
 }
 .container .prices .price .services .service {
-  /* background-color: #ffffff; */
   width: 100%;
   height: 30px;
   display: flex;
@@ -98,10 +99,10 @@
   font-size: 15px;
 }
 .service-enable {
-  color: #000000;
+  color: var(--service-enable);
 }
 .service-disable {
-  color: var(--text-gray-contrastA);
+  color: var(--service-disable);
 }
 .container .prices .price .services .service h4 img {
   margin-right: 40px;
