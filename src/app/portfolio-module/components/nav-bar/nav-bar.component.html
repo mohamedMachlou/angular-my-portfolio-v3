@@ -7,13 +7,15 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
     >
+      <!-- Light Icon for Contrast -->
       <img
-        *ngIf="this.switchClr()"
+        *ngIf="!switchClr()"
         src="../../../../assets/images/Menu Icons Active/Contrast-icon-sun.svg"
         alt=""
       />
+      <!-- Dark Icon for Contrast -->
       <img
-        *ngIf="!this.switchClr()"
+        *ngIf="switchClr()"
         src="../../../../assets/images/Menu Icons Deactive/Contrast-m-Icon.svg"
         alt=""
       />
@@ -25,7 +27,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.selected() == 'home' ? 'selectedClass' : 'isDeactiveClass'
+        this.selected() == 'home' ? 'isActiveClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -44,7 +46,7 @@
       routerLink="['/service']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.selected() == 'service' ? 'selectedClass' : 'isDeactiveClass'
+        this.selected() == 'service' ? 'isActiveClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -63,7 +65,7 @@
       routerLink="['/education']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.selected() == 'education' ? 'selectedClass' : 'isDeactiveClass'
+        this.selected() == 'education' ? 'isActiveClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -82,7 +84,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.selected() == 'portfolio' ? 'selectedClass' : 'isDeactiveClass'
+        this.selected() == 'portfolio' ? 'isActiveClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -101,7 +103,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.selected() == 'blog' ? 'selectedClass' : 'isDeactiveClass'
+        this.selected() == 'blog' ? 'isActiveClass' : 'isDeactiveClass'
       ]"
     >
       <img
@@ -120,7 +122,7 @@
       routerLink="['/home']"
       routerLinkActive="router-link-active"
       [ngClass]="[
-        this.selected() == 'contact' ? 'selectedClass' : 'isDeactiveClass'
+        this.selected() == 'contact' ? 'isActiveClass' : 'isDeactiveClass'
       ]"
     >
       <img

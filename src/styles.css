@@ -6,29 +6,23 @@
 /* Start Variables  */
 :root {
   --main-color: #2a4fa7;
-
-  --gray-color: #747373;
   --text-para-size: 16px;
   --text-para-weight: 400;
-  --background-color: #e7e7e7;
 
-  --btn-color-diasble: #728ecf;
-  --txt-button: #ffffff;
+  /* Switch Colors Mode Dark or Light */
+  --front-color-Befor: black;
+  --front-color-After: #ffffff;
 
-  /* Contrast Colors */
-  --front-color-Befor: #ffffff;
-  --front-color-After: black;
-
-  --back-color-After: #1e1e1e;
-  --back-color-befor: #d4d4d4;
+  --back-color-After: #d4d4d4;
+  --back-color-befor: #1e1e1e;
 
   --available-color: #3fd807;
 
-  --txt-h2h4h6-befor: #000000;
-  --txt-h2h4h6-after: #ffffff;
+  --txt-h2h4h6-befor: #ffffff;
+  --txt-h2h4h6-after: #000000;
 
-  --txt-h5p-befor: #565454;
-  --txt-h5p-after: #969494;
+  --txt-h5p-befor: #969494;
+  --txt-h5p-after: #565454;
 
   --txt-deactive-befor: #565454;
   --txt-deactive-after: #565454;
@@ -40,9 +34,12 @@
 
   --line-color-befor: #959292;
 
-  --input-color-befor: #dfe8be;
+  --input-color-befor: #ececc2;
 
   --label-color-befor: #969494;
+
+  --btn-color-diasble: #728ecf;
+  --txt-button: #ffffff;
 }
 /* End Variables  */
 /* Button Component */
@@ -56,6 +53,23 @@ button {
   background-color: var(--main-color);
   color: var(--txt-button);
   cursor: pointer;
+}
+
+/* Set Dafault Color to Headers and Paragraphs */
+h2 {
+  color: var(--txt-h2h4h6-befor);
+}
+h4 {
+  color: var(--txt-h2h4h6-befor);
+}
+h6 {
+  color: var(--txt-h2h4h6-befor);
+}
+h5 {
+  color: var(--txt-h5p-befor);
+}
+p {
+  color: var(--txt-h5p-befor);
 }
 /* Start Section Heading Component */
 .container .section-heading {
