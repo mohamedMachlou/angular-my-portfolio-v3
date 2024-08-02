@@ -17,7 +17,7 @@ export class ManageListsService {
 
   // Set Enable Color to Active Portfolio List
   // --main-color: #2a4fa7;
-  enableClr = signal<String>('#2a4fa7');
+  enableClr = signal<String>('var(--main-color)');
   // Set Disable Color to Deactive Portfolio List
   disableClr = signal<String>('#000000');
 
@@ -45,7 +45,7 @@ export class ManageListsService {
 
     /////// Add Style to Active list
     this.enableList.map((li) => {
-      li.setAttribute('style', 'color : #2a4fa7');
+      li.setAttribute('style', 'color : var(--main-color)');
     });
 
     //// Choose Disable Color

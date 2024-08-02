@@ -86,6 +86,8 @@ form .form-group input {
   border: none;
   border-radius: 6px;
   caret-color: black;
+  font-weight: 600;
+  font-size: 14px;
 }
 form .form-group textarea {
   width: 100%;
@@ -96,6 +98,8 @@ form .form-group textarea {
   border: none;
   border-radius: 6px;
   caret-color: black;
+  font-weight: 600;
+  font-size: 14px;
 }
 form button {
   width: 180px;

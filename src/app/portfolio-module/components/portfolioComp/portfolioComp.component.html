@@ -18,12 +18,11 @@
       <li (click)="setId(4); getImages()">Logo</li>
     </ul>
     <div class="slider">
-      <div class="arrow-left"></div>
+      <div class="arrow-left" (click)="prevImage()"></div>
       <img class="prev-img" [src]="prevImg()" alt="" />
       <img class="main-img" [src]="mainImg()" alt="" />
       <img class="next-img" [src]="nextImg()" alt="" />
-
-      <div class="arrow-right"></div>
+      <div class="arrow-right" (click)="nextImage()"></div>
     </div>
   </div>
 </div>
