@@ -195,6 +195,7 @@ body {
 } */
 .nav {
   background-color: var(--front-color-Befor);
+  /* height: 900px; */
   height: 650px;
   width: 60px;
   position: fixed;

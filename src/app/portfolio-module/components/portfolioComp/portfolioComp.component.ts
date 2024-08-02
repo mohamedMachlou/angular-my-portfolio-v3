@@ -45,8 +45,6 @@ export class PortfolioComponent implements OnInit {
   nextImage() {
     if (this.mainImgIndex < this.imgToShow.length - 1) {
       this.mainImgIndex++;
-      console.log('mainImgIndex : ', this.mainImgIndex);
-      console.log('imgToShow.length : ', this.imgToShow.length);
     }
     this.slider();
   }
@@ -54,8 +52,6 @@ export class PortfolioComponent implements OnInit {
   prevImage() {
     if (this.mainImgIndex >= 1) {
       this.mainImgIndex--;
-      console.log('mainImgIndex : ', this.mainImgIndex);
-      console.log('imgToShow.length : ', this.imgToShow.length);
     }
     this.slider();
   }

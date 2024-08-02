@@ -49,11 +49,11 @@
 }
 .container .portfolio .slider {
   width: 100%;
-  height: 450px;
+  height: 545px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #282222;
+  background-color: #0e0f0f;
   position: relative;
   overflow: hidden;
 }
@@ -61,36 +61,49 @@
   width: 50%;
   z-index: 18;
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: -26%;
   opacity: 20%;
+  border-radius: 10px;
 }
 .slider .main-img {
   width: 50%;
   z-index: 18;
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: 25%;
+  border-radius: 10px;
 }
 .slider .next-img {
   width: 50%;
   z-index: 18;
   position: absolute;
-  top: 0px;
+  top: 5px;
   right: -26%;
   opacity: 20%;
+  border-radius: 10px;
 }
-.slider .arrow-left {
-  width: 50px;
-  height: 50px;
-  background-color: #f83719;
+.slider .arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   z-index: 20;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 15px;
 }
-.slider .arrow-right {
-  width: 50px;
-  height: 50px;
-  background-color: #0acbab;
-  z-index: 20;
+.slider .arrow img {
+  width: 70%;
+}
+.arr-active {
+  background-color: #090909;
+  opacity: 100%;
+}
+.arr-deactive {
+  background-color: #414040;
+  opacity: 50%;
 }
 /* Extra large devices (large desktops, 1200px and down) */
 @media (max-width: 1200px) {
