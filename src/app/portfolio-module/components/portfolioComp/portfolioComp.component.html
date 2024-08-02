@@ -17,10 +17,13 @@
       <li (click)="setId(3); getImages()">Web Apps</li>
       <li (click)="setId(4); getImages()">Logo</li>
     </ul>
-    <div class="portfolio_img">
-      <div class="show-img" *ngFor="let source of imgToShow">
-        <img [src]="source" alt="" />
-      </div>
+    <div class="slider">
+      <div class="arrow-left"></div>
+      <img class="prev-img" [src]="prevImg()" alt="" />
+      <img class="main-img" [src]="mainImg()" alt="" />
+      <img class="next-img" [src]="nextImg()" alt="" />
+
+      <div class="arrow-right"></div>
     </div>
   </div>
 </div>
