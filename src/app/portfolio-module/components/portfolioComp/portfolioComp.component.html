@@ -18,7 +18,10 @@
       <li (click)="setId(4); getImages()">Logo</li>
     </ul>
     <div class="slider">
-      <div class="arrow" (click)="prevImage()">
+      <div
+        [classList]="this.mainImgIndex != 0 ? 'arr-active' : 'arr-deactive'"
+        (click)="prevImage()"
+      >
         <img
           src="../../../../assets/images/Portfolio__Images/left-arrow.svg"
           alt=""
@@ -27,7 +30,14 @@
       <img class="prev-img" [src]="prevImg()" alt="" />
       <img class="main-img" [src]="mainImg()" alt="" />
       <img class="next-img" [src]="nextImg()" alt="" />
-      <div class="arrow" (click)="nextImage()">
+      <div
+        [classList]="
+          this.mainImgIndex + 1 == imgToShow.length
+            ? 'arr-deactive'
+            : 'arr-active'
+        "
+        (click)="nextImage()"
+      >
         <img
           src="../../../../assets/images/Portfolio__Images/right-arrow.svg"
           alt=""
