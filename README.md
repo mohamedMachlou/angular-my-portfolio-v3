@@ -41,6 +41,16 @@ https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/f0fd09
 ![30 06 2024_08 45 27_REC](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/1f151728-8027-4446-8252-ba989146899b)
 ![30 06 2024_08 46 03_REC](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/067d5340-d4eb-4d1c-8c3c-c0ac1d8b86af)
 
+![03 08 2024_11 38 12_REC](https://github.com/user-attachments/assets/0993aced-ecde-41cd-a459-a75f6359a349)
+![03 08 2024_11 40 28_REC](https://github.com/user-attachments/assets/8fcdfd4c-3a67-40c1-9f22-7856ebaf99ad)
+![03 08 2024_11 40 56_REC](https://github.com/user-attachments/assets/7c581c86-888a-436c-b38e-97aa177e5347)
+![03 08 2024_11 43 42_REC](https://github.com/user-attachments/assets/6151d27e-fde0-4795-a6f7-aea17bd34ddd)
+![03 08 2024_11 44 16_REC](https://github.com/user-attachments/assets/efdad677-56c0-4a7e-9f81-9c57b00c76a1)
+![03 08 2024_11 44 41_REC](https://github.com/user-attachments/assets/1fd30532-b07c-4b98-ad1e-26942254fab1)
+![03 08 2024_11 45 10_REC](https://github.com/user-attachments/assets/046a15a4-2248-40b5-9fed-fa64d2421b48)
+![03 08 2024_11 45 52_REC](https://github.com/user-attachments/assets/0ae96810-966a-4eba-b03c-c1b121bfea66)
+![03 08 2024_11 46 17_REC](https://github.com/user-attachments/assets/5c134fc8-f940-4b0b-b35d-2a03770b3fc0)
+
 #ScreenShots for Mobile 
 ![1719740584919](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/3c88aa97-b035-4113-aff7-7dfa7eb4d5e5)
 ![1719740584954](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/548a035d-1379-4a6d-82b5-406d021a8e58)
@@ -58,3 +68,6 @@ https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/f0fd09
 ![1719740585284](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/8add3658-075e-4e6b-9093-6269471e0e99)
 ![1719740585312](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/c479be8d-b50c-4299-a5c3-9b78b2f97d29)
 ![1719740585330](https://github.com/mohamedMachlou/angular-my-portfolio-v3/assets/26061419/b5c98379-7b80-4011-b36a-48dc20e400dd)
+
+
+
