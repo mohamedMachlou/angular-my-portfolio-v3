@@ -55,7 +55,7 @@
         </div>
       </div>
     </div>
-    <form #f="ngForm" (ngSubmit)="showForm(f)" id="contact">
+    <form #f="ngForm" (ngSubmit)="sendEmail(f)" id="contact">
       <div class="form-group">
         <label for="">Your Full Name <span>*</span></label>
         <input
@@ -66,7 +66,6 @@
           #fullname="ngModel"
           ngModel
           name="fullname"
-          (change)="validate(fullname)"
           type="text"
         />
         <div class="alert-success" *ngIf="fullname.dirty && fullname.valid">
@@ -79,6 +78,13 @@
           <div *ngIf="fullname.errors?.['minlength']">
             Ce champs doit avoir
             {{ fullname.errors?.['minlength'].actualLength
+
+
+
+
+
+
+
 
 
 
@@ -101,7 +107,6 @@
           #email="ngModel"
           ngModel
           name="email"
-          (change)="validate(email)"
           type="text"
         />
         <div class="alert-success" *ngIf="email.dirty && email.valid">
@@ -114,6 +119,13 @@
           <div *ngIf="email.errors?.['minlength']">
             Ce champs doit avoir
             {{ email.errors?.['minlength'].actualLength
+
+
+
+
+
+
+
 
 
 
@@ -149,7 +161,6 @@
           #message="ngModel"
           ngModel
           name="message"
-          (change)="validate(message)"
           id=""
         ></textarea>
         <div class="alert-danger" *ngIf="message.touched && !message.valid">
@@ -159,6 +170,13 @@
           <div *ngIf="message.errors?.['minlength']">
             Ce champs doit avoir
             {{ message.errors?.['minlength'].actualLength
+
+
+
+
+
+
+
 
 
 

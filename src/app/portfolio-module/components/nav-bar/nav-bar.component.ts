@@ -27,7 +27,7 @@ export class NavBarComponent implements OnInit {
     this.switchClr.set(this.switchColorService.switchClr());
     this.manageListsService.manageListById(0);
   }
-
+ 
   ngOnInit(): void {}
 }
 /////////////////////////////////////////////////////////
