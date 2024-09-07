@@ -1,5 +1,6 @@
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'contact',
@@ -7,12 +8,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../../components/contact/contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  contact = {
-    name: '',
-    email: '',
-    message: '',
-  };
-
   constructor() {}
 
   ngOnInit(): void {}
@@ -28,19 +23,18 @@ export class ContactComponent implements OnInit {
   formData = {
     user_name: '',
     user_email: '',
+    subject: '',
     message: '',
   };
+  //////////////
+  inputs = document.querySelectorAll('input');
 
-  public sendEmail(f: any) {
+  public sendEmail() {
     // console.log(f.value);
     // (this.contact.name = f.value.fullname),
     //   (this.contact.email = f.value.email),
     //   (this.contact.message = f.value.message),
-    this.formData = {
-      user_name: f.value.fullname,
-      user_email: f.value.email,
-      message: f.value.message,
-    };
+
     console.log(this.formData);
 
     emailjs
@@ -58,6 +52,12 @@ export class ContactComponent implements OnInit {
           console.log('FAILED...', error.status, error.text);
         }
       );
+    this.formData = {
+      user_name: '',
+      user_email: '',
+      subject: '',
+      message: '',
+    };
   }
 
   // emailjs.send("service_kkjbfj9","template_y6sq7rt");

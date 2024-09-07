@@ -90,7 +90,7 @@ form .form-group input {
   font-size: 14px;
 }
 form .form-group textarea {
-  width: 100%;
+  width: 590px;
   min-height: 80px;
   height: 175px;
   background-color: var(--input-color-befor);
